@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi44dkbtq3vev"
-path="res://.godot/imported/The Throne.png-01fffcc2db4aa9abd6d6f7450d5be257.ctex"
+path="res://.godot/imported/The Throne.png-004a75be8ac8fa0c381d823993d6bf57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/The Throne.png"
-dest_files=["res://.godot/imported/The Throne.png-01fffcc2db4aa9abd6d6f7450d5be257.ctex"]
+source_file="res://assets/The Throne.png"
+dest_files=["res://.godot/imported/The Throne.png-004a75be8ac8fa0c381d823993d6bf57.ctex"]
 
 [params]
 
