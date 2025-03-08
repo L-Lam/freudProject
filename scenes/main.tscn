@@ -1,26 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://dnii3gvrl8glt"]
+[gd_scene load_steps=8 format=3 uid="uid://dnii3gvrl8glt"]
 
 [ext_resource type="PackedScene" uid="uid://cqhisn30cj517" path="res://scenes/player.tscn" id="1_38g7y"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_xf6mb"]
 [ext_resource type="Script" path="res://scenes/player.gd" id="2_lydnn"]
 [ext_resource type="Texture2D" uid="uid://rsy6uqrikv0t" path="res://assets/audience1.png" id="4_3md8l"]
 [ext_resource type="Texture2D" uid="uid://cmpa4smxqfxn5" path="res://assets/audience0.png" id="4_kkcug"]
+[ext_resource type="Texture2D" uid="uid://c8cy7bffeckg1" path="res://assets/Portrait.png" id="6_le2og"]
+[ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://assets/Purity.png" id="7_4yq1a"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_xf6mb")
 
 [node name="Player" parent="." instance=ExtResource("1_38g7y")]
-position = Vector2(646, 324)
+position = Vector2(300, 500)
 script = ExtResource("2_lydnn")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(70, 80)
+position = Vector2(420, -92)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(1464, 409)
-motion_scale = Vector2(1, 0)
+motion_scale = Vector2(2, 0)
 motion_mirroring = Vector2(2880, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
@@ -28,10 +30,22 @@ scale = Vector2(0.75, 0.75)
 texture = ExtResource("4_3md8l")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(2, 0)
+motion_scale = Vector2(3, 0)
 motion_mirroring = Vector2(2880, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(1435, 406)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("4_kkcug")
+
+[node name="Paintings" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Paintings"]
+position = Vector2(458, 224)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("6_le2og")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Paintings"]
+position = Vector2(1106, 232)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_4yq1a")
