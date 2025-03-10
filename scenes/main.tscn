@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_xf6mb"]
 [ext_resource type="Script" path="res://scenes/player.gd" id="2_lydnn"]
-[ext_resource type="Texture2D" uid="uid://cip4e5b34jd5m" path="res://assets/frame.png" id="3_mqdcx"]
+[ext_resource type="Texture2D" uid="uid://dngfrdprma20d" path="res://assets/frame.png" id="3_mqdcx"]
 [ext_resource type="Texture2D" uid="uid://rsy6uqrikv0t" path="res://assets/audience1.png" id="4_3md8l"]
 [ext_resource type="Texture2D" uid="uid://cmpa4smxqfxn5" path="res://assets/audience0.png" id="4_kkcug"]
 [ext_resource type="Texture2D" uid="uid://edw54gse6u45" path="res://assets/stage.png" id="6_dq4fk"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://daw27glbgpi8f"
-path="res://.godot/imported/Street.png-4a7aaf3f297d13eb6ca03eb98c9f3b55.ctex"
+path="res://.godot/imported/Street.png-83983e20e421b81471ae790394865157.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Street.png"
-dest_files=["res://.godot/imported/Street.png-4a7aaf3f297d13eb6ca03eb98c9f3b55.ctex"]
+source_file="res://assets/Street.png"
+dest_files=["res://.godot/imported/Street.png-83983e20e421b81471ae790394865157.ctex"]
 
 [params]
 
