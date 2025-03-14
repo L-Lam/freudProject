@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://2hauu5tpm3mk"]
+
+[ext_resource type="Texture2D" uid="uid://dngfrdprma20d" path="res://assets/frame.png" id="1_2455m"]
+[ext_resource type="Script" path="res://scripts/subconscious.gd" id="1_isvgs"]
+[ext_resource type="Texture2D" uid="uid://bv5f4qjiudras" path="res://assets/label.png" id="2_luhe4"]
+
+[sub_resource type="Gradient" id="Gradient_57js1"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_28iup"]
+gradient = SubResource("Gradient_57js1")
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 1)
+
+[node name="Subconscious" type="Node2D"]
+script = ExtResource("1_isvgs")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(720, 120)
+scale = Vector2(28, 60)
+skew = -0.261799
+energy = 4.0
+range_layer_min = -512
+range_layer_max = 512
+texture = SubResource("GradientTexture2D_28iup")
+texture_scale = 1.48
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(-720, 120)
+scale = Vector2(28, 60)
+skew = 0.261799
+energy = 4.0
+range_layer_min = -512
+range_layer_max = 512
+texture = SubResource("GradientTexture2D_28iup")
+texture_scale = 1.48
+
+[node name="Frame" type="Sprite2D" parent="."]
+texture = ExtResource("1_2455m")
+
+[node name="Label" type="Sprite2D" parent="."]
+position = Vector2(0, 2200)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_luhe4")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -480.0
+offset_top = 1930.0
+offset_right = 1440.0
+offset_bottom = 3010.0
+scale = Vector2(0.5, 0.5)
+flat = true
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
