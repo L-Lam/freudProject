@@ -15,7 +15,7 @@ colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 gradient = SubResource("Gradient_5m6sg")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
-fill_to = Vector2(0.894495, 0.188073)
+fill_to = Vector2(0.9, 0.2)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_xf6mb")
@@ -76,7 +76,6 @@ theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 text = "I got this fire burning in me from within. Concentrated thoughts on who I used to be, I'm sheeding skin. Every day, a new version of me, a third of me demented cemented in pain, juggling the pros and cons of fame. I don't know how to make friends, I'm a lonely soul. I recollect this isolation, I was four years old. Truth be told, I've been battling my soul, tryna navigate the real and fake, cynical about the judgement day. I did past life progression last year and it screwed me up. Reincarnated on this earth for a hundred plus. Body after body, lesson after lesson, let's take it back to Michigan in 1947. My father kicked me out the house cause I wouldn't listen to him. I didn't care about his influence, only loved what I was doing. Gifted as a musician, I played guitar on the grand level. The most talented where I'm from, but I had to rebel. And so I'm off in the sunset, searching for my place in the world. With my guitar up on my hip, that's the story unfurled. I found myself with a pocket full of money and a whole lot of respect, while the record vendors loved me, I was head of rhythm and blues. The women that fell to their feet, so many to choose. But I manipulated power, as I lied to the masses. Died with my money, gluttony was too attractive, reincarnated."
-scroll_following = true
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="SubconsciousPaintings/Purity/Subconscious/Window"]
@@ -97,16 +96,16 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_0ixch")
 
 [node name="Player" parent="." instance=ExtResource("7_wfhu6")]
-z_index = 1
-position = Vector2(174, 741)
+z_index = 2
+position = Vector2(288, 775)
 script = ExtResource("2_lydnn")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-174, -741)
+position = Vector2(-288, -775)
 offset = Vector2(960, 540)
 
 [node name="PointLight2D" type="PointLight2D" parent="Player"]
-scale = Vector2(5, 5)
+scale = Vector2(7, 7)
 energy = 4.0
 range_layer_min = -512
 range_layer_max = 512
@@ -116,10 +115,10 @@ shadow_filter = 1
 texture = SubResource("GradientTexture2D_ucecw")
 
 [node name="Escape" type="RichTextLabel" parent="Player"]
-offset_left = -174.0
-offset_top = -741.0
-offset_right = 826.0
-offset_bottom = -701.0
+offset_left = -288.0
+offset_top = -775.0
+offset_right = 712.0
+offset_bottom = -735.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true

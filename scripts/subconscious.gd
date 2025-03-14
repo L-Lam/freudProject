@@ -11,6 +11,7 @@ func _on_window_close_requested() -> void:
 
 
 func _on_button_pressed() -> void:
+	$Window.hide()
 	$Window.show()
 
 
