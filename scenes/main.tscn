@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dnii3gvrl8glt"]
+[gd_scene load_steps=11 format=3 uid="uid://dnii3gvrl8glt"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_xf6mb"]
 [ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://assets/Purity.png" id="2_0ixch"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_lydnn"]
 [ext_resource type="PackedScene" uid="uid://2hauu5tpm3mk" path="res://scenes/subconscious.tscn" id="3_7ugbf"]
-[ext_resource type="FontFile" uid="uid://mvcev2t42ldw" path="res://assets/moglan.ttf" id="4_r6ve1"]
+[ext_resource type="FontFile" uid="uid://mvcev2t42ldw" path="res://assets/cabin.ttf" id="4_r6ve1"]
+[ext_resource type="PackedScene" uid="uid://dl36cso0yu1ri" path="res://scenes/conscious.tscn" id="5_iybts"]
 [ext_resource type="Texture2D" uid="uid://h8o51vgq6vi8" path="res://assets/background.png" id="6_vtge3"]
 [ext_resource type="PackedScene" uid="uid://cjrb43ws6y1go" path="res://scenes/player.tscn" id="7_wfhu6"]
 
@@ -31,6 +32,67 @@ motion_mirroring = Vector2(3840, 0)
 [node name="Sprite2D" type="Sprite2D" parent="Background/ParallaxLayer"]
 texture = ExtResource("6_vtge3")
 centered = false
+
+[node name="ConsciousPaintings" type="Node2D" parent="."]
+scale = Vector2(0.15, 0.15)
+
+[node name="Purity2" type="Sprite2D" parent="ConsciousPaintings"]
+top_level = true
+z_index = 1
+position = Vector2(-960, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_0ixch")
+
+[node name="LabelText" type="RichTextLabel" parent="ConsciousPaintings/Purity2"]
+offset_left = -480.0
+offset_top = 1980.0
+offset_right = 520.0
+offset_bottom = 2460.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Conscious" parent="ConsciousPaintings/Purity2" instance=ExtResource("5_iybts")]
+
+[node name="Window" type="Window" parent="ConsciousPaintings/Purity2/Conscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="ConsciousPaintings/Purity2/Conscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "I got this fire burning in me from within. Concentrated thoughts on who I used to be, I'm sheeding skin. Every day, a new version of me, a third of me demented cemented in pain, juggling the pros and cons of fame. I don't know how to make friends, I'm a lonely soul. I recollect this isolation, I was four years old. Truth be told, I've been battling my soul, tryna navigate the real and fake, cynical about the judgement day. I did past life progression last year and it screwed me up. Reincarnated on this earth for a hundred plus. Body after body, lesson after lesson, let's take it back to Michigan in 1947. My father kicked me out the house cause I wouldn't listen to him. I didn't care about his influence, only loved what I was doing. Gifted as a musician, I played guitar on the grand level. The most talented where I'm from, but I had to rebel. And so I'm off in the sunset, searching for my place in the world. With my guitar up on my hip, that's the story unfurled. I found myself with a pocket full of money and a whole lot of respect, while the record vendors loved me, I was head of rhythm and blues. The women that fell to their feet, so many to choose. But I manipulated power, as I lied to the masses. Died with my money, gluttony was too attractive, reincarnated."
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="ConsciousPaintings/Purity2/Conscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 130.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Purity [font_size=42]by Prog Usee"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="ConsciousPaintings/Purity2/Conscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0ixch")
 
 [node name="SubconsciousPaintings" type="Node2D" parent="."]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
