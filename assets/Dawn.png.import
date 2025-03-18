@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djg6ojnbxqipp"
-path="res://.godot/imported/Dawn.png-d47a8b1bfb37fbd26c3f5e3cc80d707f.ctex"
+path="res://.godot/imported/Dawn.png-757417c8d4ba06cd03088825825b3aef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dawn.png"
-dest_files=["res://.godot/imported/Dawn.png-d47a8b1bfb37fbd26c3f5e3cc80d707f.ctex"]
+source_file="res://assets/Dawn.png"
+dest_files=["res://.godot/imported/Dawn.png-757417c8d4ba06cd03088825825b3aef.ctex"]
 
 [params]
 

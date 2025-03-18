@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cjrb43ws6y1go"]
 
-[ext_resource type="Texture2D" uid="uid://bgt6ux45n6s11" path="res://Assets/Walk-Sheet.png" id="1_yfr0v"]
+[ext_resource type="Texture2D" uid="uid://bgt6ux45n6s11" path="res://assets/Walk-Sheet.png" id="1_yfr0v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ce12d"]
 atlas = ExtResource("1_yfr0v")
@@ -47,7 +47,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"move",
-"speed": 4.0
+"speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8uti"]
@@ -59,7 +59,7 @@ size = Vector2(15, 65)
 texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_4crxg")
-animation = &"idle"
+animation = &"move"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
