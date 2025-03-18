@@ -891,12 +891,6 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_filter = 1
 texture = SubResource("GradientTexture2D_ucecw")
 
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-range_z_min = -1
-range_z_max = -1
-range_layer_min = -1
-range_layer_max = -1
-
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(960, 540)
 script = ExtResource("17_1cox0")
@@ -909,6 +903,12 @@ theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
 text = " Press \"Esc\" to quit."
 fit_content = true
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+range_z_min = -1
+range_z_max = -1
+range_layer_min = -1
+range_layer_max = -1
 
 [connection signal="close_requested" from="Usee/Purity/Conscious/Window" to="Usee/Purity/Conscious" method="_on_window_close_requested"]
 [connection signal="close_requested" from="Usee/Streets/Conscious/Window" to="Usee/Streets/Conscious" method="_on_window_close_requested"]
