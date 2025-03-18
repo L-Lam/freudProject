@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://mvcev2t42ldw"
-path="res://.godot/imported/cabin.ttf-a5613efd6fb7d84cfbf7796e5dd6d6c5.fontdata"
+path="res://.godot/imported/cabin.ttf-ad48b95f0e51aef0cffb596dd9179138.fontdata"
 
 [deps]
 
-source_file="res://assets/cabin.ttf"
-dest_files=["res://.godot/imported/cabin.ttf-a5613efd6fb7d84cfbf7796e5dd6d6c5.fontdata"]
+source_file="res://Assets/cabin.ttf"
+dest_files=["res://.godot/imported/cabin.ttf-ad48b95f0e51aef0cffb596dd9179138.fontdata"]
 
 [params]
 

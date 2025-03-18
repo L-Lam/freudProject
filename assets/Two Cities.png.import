@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cm503vlwg6hb7"
-path="res://.godot/imported/Two Cities.png-af3ddfb60adeecf3f326b23929fe1108.ctex"
+path="res://.godot/imported/Two Cities.png-aea67e5bb57c7f893ae67bbe3b5fddb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Two Cities.png"
-dest_files=["res://.godot/imported/Two Cities.png-af3ddfb60adeecf3f326b23929fe1108.ctex"]
+source_file="res://Assets/Two Cities.png"
+dest_files=["res://.godot/imported/Two Cities.png-aea67e5bb57c7f893ae67bbe3b5fddb3.ctex"]
 
 [params]
 

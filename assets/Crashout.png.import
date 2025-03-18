@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx2y3emj01ja1"
-path="res://.godot/imported/Crashout.png-59d8cb681bda2b3857da0d51cf47c89b.ctex"
+path="res://.godot/imported/Crashout.png-b78eef6b112d895238e641d2c0548605.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Crashout.png"
-dest_files=["res://.godot/imported/Crashout.png-59d8cb681bda2b3857da0d51cf47c89b.ctex"]
+source_file="res://Assets/Crashout.png"
+dest_files=["res://.godot/imported/Crashout.png-b78eef6b112d895238e641d2c0548605.ctex"]
 
 [params]
 

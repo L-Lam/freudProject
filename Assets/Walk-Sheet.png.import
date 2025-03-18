@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi44dkbtq3vev"
-path="res://.godot/imported/The Throne.png-01fffcc2db4aa9abd6d6f7450d5be257.ctex"
+uid="uid://bgt6ux45n6s11"
+path="res://.godot/imported/Walk-Sheet.png-7d73b4dbd4775b53e58916e2f139ad90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/The Throne.png"
-dest_files=["res://.godot/imported/The Throne.png-01fffcc2db4aa9abd6d6f7450d5be257.ctex"]
+source_file="res://Assets/Walk-Sheet.png"
+dest_files=["res://.godot/imported/Walk-Sheet.png-7d73b4dbd4775b53e58916e2f139ad90.ctex"]
 
 [params]
 

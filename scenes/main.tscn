@@ -1,21 +1,21 @@
 [gd_scene load_steps=20 format=3 uid="uid://dnii3gvrl8glt"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_xf6mb"]
-[ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://assets/Purity.png" id="2_0ixch"]
+[ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://Assets/Purity.png" id="2_0ixch"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_lydnn"]
 [ext_resource type="PackedScene" uid="uid://2hauu5tpm3mk" path="res://scenes/subconscious.tscn" id="3_7ugbf"]
-[ext_resource type="FontFile" uid="uid://mvcev2t42ldw" path="res://assets/cabin.ttf" id="4_r6ve1"]
+[ext_resource type="FontFile" uid="uid://mvcev2t42ldw" path="res://Assets/cabin.ttf" id="4_r6ve1"]
 [ext_resource type="PackedScene" uid="uid://dl36cso0yu1ri" path="res://scenes/conscious.tscn" id="5_iybts"]
-[ext_resource type="Texture2D" uid="uid://daw27glbgpi8f" path="res://assets/Street.png" id="6_dm46c"]
-[ext_resource type="Texture2D" uid="uid://h8o51vgq6vi8" path="res://assets/background.png" id="6_vtge3"]
-[ext_resource type="Texture2D" uid="uid://bi44dkbtq3vev" path="res://assets/The Throne.png" id="7_jd0cy"]
+[ext_resource type="Texture2D" uid="uid://daw27glbgpi8f" path="res://Assets/Street.png" id="6_dm46c"]
+[ext_resource type="Texture2D" uid="uid://h8o51vgq6vi8" path="res://Assets/background.png" id="6_vtge3"]
+[ext_resource type="Texture2D" uid="uid://bi44dkbtq3vev" path="res://Assets/The Throne.png" id="7_jd0cy"]
 [ext_resource type="PackedScene" uid="uid://cjrb43ws6y1go" path="res://scenes/player.tscn" id="7_wfhu6"]
-[ext_resource type="Texture2D" uid="uid://bgfniy2luule6" path="res://assets/Styx.png" id="8_44pqx"]
-[ext_resource type="Texture2D" uid="uid://djg6ojnbxqipp" path="res://assets/Dawn.png" id="9_mikii"]
-[ext_resource type="Texture2D" uid="uid://baxpfb6ekt4sc" path="res://assets/Trap.png" id="10_5gkuf"]
-[ext_resource type="Texture2D" uid="uid://cm503vlwg6hb7" path="res://assets/Two Cities.png" id="12_hrhjj"]
-[ext_resource type="Texture2D" uid="uid://dvu5n78hhmdtn" path="res://assets/Nightlife.png" id="13_awf5m"]
-[ext_resource type="Texture2D" uid="uid://dxi448o627oq" path="res://assets/Pain.png" id="14_ol601"]
+[ext_resource type="Texture2D" uid="uid://bgfniy2luule6" path="res://Assets/Styx.png" id="8_44pqx"]
+[ext_resource type="Texture2D" uid="uid://djg6ojnbxqipp" path="res://Assets/Dawn.png" id="9_mikii"]
+[ext_resource type="Texture2D" uid="uid://baxpfb6ekt4sc" path="res://Assets/Trap.png" id="10_5gkuf"]
+[ext_resource type="Texture2D" uid="uid://cm503vlwg6hb7" path="res://Assets/Two Cities.png" id="12_hrhjj"]
+[ext_resource type="Texture2D" uid="uid://dvu5n78hhmdtn" path="res://Assets/Nightlife.png" id="13_awf5m"]
+[ext_resource type="Texture2D" uid="uid://dxi448o627oq" path="res://Assets/Pain.png" id="14_ol601"]
 [ext_resource type="Script" path="res://scenes/camera.gd" id="17_1cox0"]
 
 [sub_resource type="Gradient" id="Gradient_5m6sg"]
@@ -428,6 +428,15 @@ offset_bottom = 760.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
+text = "Dawn represents Useé's acceptance of his repressed trauma. This painting was created after two years of seeking therapy and represents finally coming to terms with his difficult past. 
+
+The central figure of the painting remains to be a silhouette, maintaining Useé’s motif of silhouettes being his subconscious, but now, he can be seen wearing a white t-shirt. This t-shirt symbolizes acceptance as it represents how Useé has dealt with his past rather than repress it. The color white is significant because it represents purity and peace, illustrating his new alleviation of his past.
+
+Additionally, the figure walking into the sunset represents catharsis. In his other paintings, Useé depicts stagnant scenes where the figures are trapped and forced to be isolated such as in The Throne or Styx. In contrast to this pattern, Dawn exhibits growth and freedom to the point with the figure walking into the sunset to symbolize its sense of healing and freedom. His act of walking into the sunset marks Useé’s point of closure, where his trauma no longer defines him and he can move toward a future disconnected from his past.
+
+The sunset itself  represents consciousness, comfort, and transformation. Just as the sunset is the point where day shifts to night, Useé’s representation of the sunset represents his own transformation of past trauma to acceptance. The motion into the sunset from the black figure is his repressed subconscious memories being moved into the conscious to be dealt with and accepted. It is catharsis because of the element of integration of his past into his conscious self.
+
+Furthermore, Dawn utilizes a bright and saturated color scheme, contrasting from Useé’s previous work where he uses more muted colors to represent repression. This usage of change in motif represents Useé’s reconnection with reality, representing how he is over the past and can see the other aspects of the world rather than simply its banal or hurtful side. It is the renewal of self-awareness and emotional clarity that these vibrant colors signify.a"
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
