@@ -2,6 +2,11 @@ extends Node2D
 
 
 func _process(float) -> void:
+	if position.x > 11520:
+		position.x = 11520
+	if position.x < -9600:
+		position.x = -9600
+	
 	if Input.is_action_pressed("ui_left") and -9600 <= position.x:
 		$AnimatedSprite2D.flip_h = true
 		$AnimatedSprite2D.play("move")

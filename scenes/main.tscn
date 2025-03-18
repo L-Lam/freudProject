@@ -43,6 +43,39 @@ motion_mirroring = Vector2(3840, 0)
 texture = ExtResource("6_vtge3")
 centered = false
 
+[node name="Quotes" type="Node2D" parent="."]
+
+[node name="Right" type="RichTextLabel" parent="Quotes"]
+self_modulate = Color(0, 0, 0, 1)
+z_index = 1
+offset_left = 12480.0
+offset_top = 540.0
+offset_right = 12980.0
+offset_bottom = 1020.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "“Most people do not really want freedom, because freedom involves responsibility, and most people are frightened of responsibility.”
+― Sigmund Freud"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Left" type="RichTextLabel" parent="Quotes"]
+z_index = 1
+offset_left = -11060.0
+offset_top = 540.0
+offset_right = -10560.0
+offset_bottom = 1020.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "“Unexpressed emotions will never die. They are buried alive and will come forth later in uglier ways.”
+― Sigmund Freud"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Usee" type="Node2D" parent="."]
 scale = Vector2(0.15, 0.15)
 
