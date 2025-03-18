@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dnii3gvrl8glt"]
+[gd_scene load_steps=21 format=3 uid="uid://dnii3gvrl8glt"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_xf6mb"]
 [ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://assets/Purity.png" id="2_0ixch"]
@@ -16,7 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://cm503vlwg6hb7" path="res://assets/Two Cities.png" id="12_hrhjj"]
 [ext_resource type="Texture2D" uid="uid://dvu5n78hhmdtn" path="res://assets/Nightlife.png" id="13_awf5m"]
 [ext_resource type="Texture2D" uid="uid://dxi448o627oq" path="res://assets/Pain.png" id="14_ol601"]
-[ext_resource type="Script" path="res://scenes/camera.gd" id="17_1cox0"]
+[ext_resource type="Texture2D" uid="uid://chy74fmbls1i1" path="res://assets/Love.png" id="15_k1aeq"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="17_1cox0"]
 
 [sub_resource type="Gradient" id="Gradient_5m6sg"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -436,7 +437,7 @@ Additionally, the figure walking into the sunset represents catharsis. In his ot
 
 The sunset itself  represents consciousness, comfort, and transformation. Just as the sunset is the point where day shifts to night, Useé’s representation of the sunset represents his own transformation of past trauma to acceptance. The motion into the sunset from the black figure is his repressed subconscious memories being moved into the conscious to be dealt with and accepted. It is catharsis because of the element of integration of his past into his conscious self.
 
-Furthermore, Dawn utilizes a bright and saturated color scheme, contrasting from Useé’s previous work where he uses more muted colors to represent repression. This usage of change in motif represents Useé’s reconnection with reality, representing how he is over the past and can see the other aspects of the world rather than simply its banal or hurtful side. It is the renewal of self-awareness and emotional clarity that these vibrant colors signify.a"
+Furthermore, Dawn utilizes a bright and saturated color scheme, contrasting from Useé’s previous work where he uses more muted colors to represent repression. This usage of change in motif represents Useé’s reconnection with reality, representing how he is over the past and can see the other aspects of the world rather than simply its banal or hurtful side. It is the renewal of self-awareness and emotional clarity that these vibrant colors signify. [332 Words]"
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
@@ -800,14 +801,15 @@ fit_content = true
 scroll_active = false
 shortcut_keys_enabled = false
 
-[node name="Untitled" type="Sprite2D" parent="Duran"]
+[node name="Love" type="Sprite2D" parent="Duran"]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
 top_level = true
 z_index = 1
 position = Vector2(-8640, 400)
 scale = Vector2(0.15, 0.15)
+texture = ExtResource("15_k1aeq")
 
-[node name="LabelText" type="RichTextLabel" parent="Duran/Untitled"]
+[node name="LabelText" type="RichTextLabel" parent="Duran/Love"]
 offset_left = -500.0
 offset_top = 2000.0
 offset_right = 500.0
@@ -815,23 +817,23 @@ offset_bottom = 2480.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
-text = "[center]Untitled
+text = "[center]Love
 [font_size=100
 ]By Ignacio Durán"
 fit_content = true
 scroll_active = false
 shortcut_keys_enabled = false
 
-[node name="Subconscious" parent="Duran/Untitled" instance=ExtResource("3_7ugbf")]
+[node name="Subconscious" parent="Duran/Love" instance=ExtResource("3_7ugbf")]
 show_behind_parent = true
 
-[node name="Window" type="Window" parent="Duran/Untitled/Subconscious"]
+[node name="Window" type="Window" parent="Duran/Love/Subconscious"]
 auto_translate_mode = 1
 initial_position = 1
 size = Vector2i(1440, 810)
 visible = false
 
-[node name="BodyText" type="RichTextLabel" parent="Duran/Untitled/Subconscious/Window"]
+[node name="BodyText" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
 offset_left = 720.0
 offset_top = 120.0
 offset_right = 1400.0
@@ -841,7 +843,7 @@ theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
 shortcut_keys_enabled = false
 
-[node name="TitleText" type="RichTextLabel" parent="Duran/Untitled/Subconscious/Window"]
+[node name="TitleText" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
 offset_top = 30.0
 offset_right = 1440.0
 offset_bottom = 130.0
@@ -849,15 +851,16 @@ size_flags_vertical = 4
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
-text = "[center]Untitled [font_size=42]by Ignacio Durán"
+text = "[center]Love [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
-[node name="Artwork" type="Sprite2D" parent="Duran/Untitled/Subconscious/Window"]
+[node name="Artwork" type="Sprite2D" parent="Duran/Love/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
+texture = ExtResource("15_k1aeq")
 
-[node name="PresentText" type="RichTextLabel" parent="Duran/Untitled/Subconscious/Window"]
+[node name="PresentText" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
 visible = false
 offset_left = -1032.0
 offset_top = 697.0
@@ -916,4 +919,4 @@ fit_content = true
 [connection signal="close_requested" from="Duran/TwoCities/Subconscious/Window" to="Duran/TwoCities/Subconscious" method="_on_window_close_requested"]
 [connection signal="close_requested" from="Duran/Nightlife/Subconscious/Window" to="Duran/Nightlife/Subconscious" method="_on_window_close_requested"]
 [connection signal="close_requested" from="Duran/Pain/Subconscious/Window" to="Duran/Pain/Subconscious" method="_on_window_close_requested"]
-[connection signal="close_requested" from="Duran/Untitled/Subconscious/Window" to="Duran/Untitled/Subconscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Duran/Love/Subconscious/Window" to="Duran/Love/Subconscious" method="_on_window_close_requested"]
