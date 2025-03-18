@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dnii3gvrl8glt"]
+[gd_scene load_steps=20 format=3 uid="uid://dnii3gvrl8glt"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_xf6mb"]
 [ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://assets/Purity.png" id="2_0ixch"]
@@ -6,8 +6,17 @@
 [ext_resource type="PackedScene" uid="uid://2hauu5tpm3mk" path="res://scenes/subconscious.tscn" id="3_7ugbf"]
 [ext_resource type="FontFile" uid="uid://mvcev2t42ldw" path="res://assets/cabin.ttf" id="4_r6ve1"]
 [ext_resource type="PackedScene" uid="uid://dl36cso0yu1ri" path="res://scenes/conscious.tscn" id="5_iybts"]
+[ext_resource type="Texture2D" uid="uid://daw27glbgpi8f" path="res://assets/Street.png" id="6_dm46c"]
 [ext_resource type="Texture2D" uid="uid://h8o51vgq6vi8" path="res://assets/background.png" id="6_vtge3"]
+[ext_resource type="Texture2D" uid="uid://bi44dkbtq3vev" path="res://assets/The Throne.png" id="7_jd0cy"]
 [ext_resource type="PackedScene" uid="uid://cjrb43ws6y1go" path="res://scenes/player.tscn" id="7_wfhu6"]
+[ext_resource type="Texture2D" uid="uid://bgfniy2luule6" path="res://assets/Styx.png" id="8_44pqx"]
+[ext_resource type="Texture2D" uid="uid://djg6ojnbxqipp" path="res://assets/Dawn.png" id="9_mikii"]
+[ext_resource type="Texture2D" uid="uid://baxpfb6ekt4sc" path="res://assets/Trap.png" id="10_5gkuf"]
+[ext_resource type="Texture2D" uid="uid://cm503vlwg6hb7" path="res://assets/Two Cities.png" id="12_hrhjj"]
+[ext_resource type="Texture2D" uid="uid://dvu5n78hhmdtn" path="res://assets/Nightlife.png" id="13_awf5m"]
+[ext_resource type="Texture2D" uid="uid://dxi448o627oq" path="res://assets/Pain.png" id="14_ol601"]
+[ext_resource type="Script" path="res://scenes/camera.gd" id="17_1cox0"]
 
 [sub_resource type="Gradient" id="Gradient_5m6sg"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -33,40 +42,42 @@ motion_mirroring = Vector2(3840, 0)
 texture = ExtResource("6_vtge3")
 centered = false
 
-[node name="ConsciousPaintings" type="Node2D" parent="."]
+[node name="Usee" type="Node2D" parent="."]
 scale = Vector2(0.15, 0.15)
 
-[node name="Purity2" type="Sprite2D" parent="ConsciousPaintings"]
+[node name="Purity" type="Sprite2D" parent="Usee"]
 top_level = true
 z_index = 1
-position = Vector2(-960, 400)
+position = Vector2(2880, 400)
 scale = Vector2(0.15, 0.15)
 texture = ExtResource("2_0ixch")
 
-[node name="LabelText" type="RichTextLabel" parent="ConsciousPaintings/Purity2"]
-offset_left = -480.0
-offset_top = 1980.0
-offset_right = 520.0
-offset_bottom = 2460.0
+[node name="LabelText" type="RichTextLabel" parent="Usee/Purity"]
+z_index = 1
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
 text = "[center]Purity
 [font_size=100
-]By Prog Usee"
+]By Prog Useé"
 fit_content = true
 scroll_active = false
 shortcut_keys_enabled = false
 
-[node name="Conscious" parent="ConsciousPaintings/Purity2" instance=ExtResource("5_iybts")]
+[node name="Conscious" parent="Usee/Purity" instance=ExtResource("5_iybts")]
+z_as_relative = false
 
-[node name="Window" type="Window" parent="ConsciousPaintings/Purity2/Conscious"]
+[node name="Window" type="Window" parent="Usee/Purity/Conscious"]
 auto_translate_mode = 1
 initial_position = 1
 size = Vector2i(1440, 810)
 visible = false
 
-[node name="BodyText" type="RichTextLabel" parent="ConsciousPaintings/Purity2/Conscious/Window"]
+[node name="BodyText" type="RichTextLabel" parent="Usee/Purity/Conscious/Window"]
 offset_left = 720.0
 offset_top = 120.0
 offset_right = 1400.0
@@ -74,43 +85,41 @@ offset_bottom = 760.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
-text = "I got this fire burning in me from within. Concentrated thoughts on who I used to be, I'm sheeding skin. Every day, a new version of me, a third of me demented cemented in pain, juggling the pros and cons of fame. I don't know how to make friends, I'm a lonely soul. I recollect this isolation, I was four years old. Truth be told, I've been battling my soul, tryna navigate the real and fake, cynical about the judgement day. I did past life progression last year and it screwed me up. Reincarnated on this earth for a hundred plus. Body after body, lesson after lesson, let's take it back to Michigan in 1947. My father kicked me out the house cause I wouldn't listen to him. I didn't care about his influence, only loved what I was doing. Gifted as a musician, I played guitar on the grand level. The most talented where I'm from, but I had to rebel. And so I'm off in the sunset, searching for my place in the world. With my guitar up on my hip, that's the story unfurled. I found myself with a pocket full of money and a whole lot of respect, while the record vendors loved me, I was head of rhythm and blues. The women that fell to their feet, so many to choose. But I manipulated power, as I lied to the masses. Died with my money, gluttony was too attractive, reincarnated."
+text = "Purity is Useé’s first introduction to Freudian art. It depicts his birth and the environment that would define his life as well as shape who he was.
+
+In the painting, there is a stern motherly figure overlooking a crib with a baby inside. The baby represents a young Useé and the figure is his mother. Useé here is id, the baby who seeks their needs and relies on pleasure to dictate their actions. The mother, on the other hand, is superego as she is the force of order, discipline, and societal expectations for the young Useé
+
+The mother’s expression towards the baby is cold and detached, creating this sense where there is an emotional barrier between the mother and the child. This barrier seen in the painting represents the problem in Useé’s oral stage of childhood development that led to his profound muteness in later childhood. Additionally, in the composition of the painting, Useé’s half is bright and colorful, while the side with his mother is dark and muted, further highlighting the emotional separation that Useé faced in his life.
+
+In the absence of warmth and affection during Useé’s infancy, his sense of self became shaped by rejection and emotional isolation. This became so intertwined with his being that muteness became his default social interaction, leading to his eventual isolation from his peers and development of his neurosis seen in Streets. This painting represents his beginning and his idea that his social anxiety was developed by his childhood development.
+
+Purity is Useé’s way of representing a key point in his childhood development and development as a person. It shows the importance of childhood development and the impact the child’s surroundings have on their future personality and behavior. Through this painting, Useé represents his confrontation with the formative struggles of emotional needs. [301 words]
+"
 shortcut_keys_enabled = false
 
-[node name="TitleText" type="RichTextLabel" parent="ConsciousPaintings/Purity2/Conscious/Window"]
+[node name="TitleText" type="RichTextLabel" parent="Usee/Purity/Conscious/Window"]
 offset_top = 30.0
 offset_right = 1440.0
-offset_bottom = 130.0
+offset_bottom = 135.0
 size_flags_vertical = 4
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
-text = "[center]Purity [font_size=42]by Prog Usee"
+text = "[center]Purity [font_size=42]by Prog Useé"
 fit_content = true
 scroll_active = false
 
-[node name="Artwork" type="Sprite2D" parent="ConsciousPaintings/Purity2/Conscious/Window"]
+[node name="Artwork" type="Sprite2D" parent="Usee/Purity/Conscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_0ixch")
 
-[node name="SubconsciousPaintings" type="Node2D" parent="."]
-modulate = Color(0.145098, 0.145098, 0.145098, 1)
-z_index = 1
-
-[node name="Purity" type="Sprite2D" parent="SubconsciousPaintings"]
-modulate = Color(0.145098, 0.145098, 0.145098, 1)
-top_level = true
-z_index = 1
-position = Vector2(960, 400)
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("2_0ixch")
-
-[node name="LabelText" type="RichTextLabel" parent="SubconsciousPaintings/Purity"]
-offset_left = -480.0
-offset_top = 1980.0
-offset_right = 520.0
-offset_bottom = 2460.0
+[node name="PresentText" type="RichTextLabel" parent="Usee/Purity/Conscious/Window"]
+visible = false
+offset_left = 2808.0
+offset_top = 697.0
+offset_right = 3808.0
+offset_bottom = 1177.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 200
 bbcode_enabled = true
@@ -121,15 +130,39 @@ fit_content = true
 scroll_active = false
 shortcut_keys_enabled = false
 
-[node name="Subconscious" parent="SubconsciousPaintings/Purity" instance=ExtResource("3_7ugbf")]
-show_behind_parent = true
+[node name="Streets" type="Sprite2D" parent="Usee"]
+top_level = true
+z_index = 1
+position = Vector2(4800, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("6_dm46c")
 
-[node name="Window" type="Window" parent="SubconsciousPaintings/Purity/Subconscious"]
+[node name="LabelText" type="RichTextLabel" parent="Usee/Streets"]
+z_index = 1
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Streets
+[font_size=100
+]By Prog Useé"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Conscious" parent="Usee/Streets" instance=ExtResource("5_iybts")]
+z_as_relative = false
+
+[node name="Window" type="Window" parent="Usee/Streets/Conscious"]
+auto_translate_mode = 1
 initial_position = 1
 size = Vector2i(1440, 810)
 visible = false
 
-[node name="BodyText" type="RichTextLabel" parent="SubconsciousPaintings/Purity/Subconscious/Window"]
+[node name="BodyText" type="RichTextLabel" parent="Usee/Streets/Conscious/Window"]
 offset_left = 720.0
 offset_top = 120.0
 offset_right = 1400.0
@@ -137,10 +170,345 @@ offset_bottom = 760.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
-text = "I got this fire burning in me from within. Concentrated thoughts on who I used to be, I'm sheeding skin. Every day, a new version of me, a third of me demented cemented in pain, juggling the pros and cons of fame. I don't know how to make friends, I'm a lonely soul. I recollect this isolation, I was four years old. Truth be told, I've been battling my soul, tryna navigate the real and fake, cynical about the judgement day. I did past life progression last year and it screwed me up. Reincarnated on this earth for a hundred plus. Body after body, lesson after lesson, let's take it back to Michigan in 1947. My father kicked me out the house cause I wouldn't listen to him. I didn't care about his influence, only loved what I was doing. Gifted as a musician, I played guitar on the grand level. The most talented where I'm from, but I had to rebel. And so I'm off in the sunset, searching for my place in the world. With my guitar up on my hip, that's the story unfurled. I found myself with a pocket full of money and a whole lot of respect, while the record vendors loved me, I was head of rhythm and blues. The women that fell to their feet, so many to choose. But I manipulated power, as I lied to the masses. Died with my money, gluttony was too attractive, reincarnated."
+text = "This painting was created after Prog Useé’s highschool education. It depicts his struggle to conform to society and the perceived isolation that permeates this piece. 
+
+The central figure has white glowing eyes, which symbolize id due to it being outstanding and introducing a focal point in the composition. Additionally, the city represents superego as it is structured and orderly. In the composition of this piece, the color blue is used to underscore the idea of calmness and structure. Here, only the central figure has the white eyes, suggesting that its balance to maintain id and superego is off, with the two forces of the subconscious creating a conflict where there is a struggle to conform to societal expectations.
+
+The central figure’s isolation from the other figures represents his neurosis, the manifestation of the built up internal turmoil of his isolating upbringing. Here, the neurosis prevents Useé from assimilating with the other figures as his perception of people is uncomforting and unsettling. The foreboding shadow emanating from the figures can be interpreted as the subconscious, a deep and vast ocean of thought that may never appear directly in conscious thought but still exists and affects us all. These twisted and distorted shadows stem from the neurosis developed from the unresolved inner turmoil in Useé’s difficult childhood upbringing.
+
+Juxtaposed to the dark silhouettes of the people within the city, the city background is bright, representing the difference between the conscious and unconscious mind. The city, orderly and illuminated, represents the conscious, where it is governed by the ego and superego as society requires those parts of the mind to function. In contrast, the shadowy figures suggest that within our consciousness lies a deeper and profound realm of hidden thought and conflict.
+
+Useé’s usage of the central figure in opposition to the surrounding word creates an almost existential tension that questions if individuals should suppress their inner conflicts for societal function or should individuals embrace their subconscious at the risk of further mental anguish. The painting, in this way, reflects not only Useé’s personal psychological struggle but also a broader commentary on the Freudian experience in society as a whole. [357 words]"
 shortcut_keys_enabled = false
 
-[node name="TitleText" type="RichTextLabel" parent="SubconsciousPaintings/Purity/Subconscious/Window"]
+[node name="TitleText" type="RichTextLabel" parent="Usee/Streets/Conscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 135.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Streets [font_size=42]by Prog Useé"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Usee/Streets/Conscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_dm46c")
+
+[node name="PresentText" type="RichTextLabel" parent="Usee/Streets/Conscious/Window"]
+visible = false
+offset_left = 2808.0
+offset_top = 697.0
+offset_right = 3808.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="TheThrone" type="Sprite2D" parent="Usee"]
+top_level = true
+z_index = 1
+position = Vector2(6720, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_jd0cy")
+
+[node name="LabelText" type="RichTextLabel" parent="Usee/TheThrone"]
+z_index = 1
+offset_left = -500.0
+offset_top = 2030.0
+offset_right = 500.0
+offset_bottom = 2510.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center][font_size=160]The Throne
+[font_size=100
+]By Prog Useé"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Conscious" parent="Usee/TheThrone" instance=ExtResource("5_iybts")]
+z_as_relative = false
+
+[node name="Window" type="Window" parent="Usee/TheThrone/Conscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Usee/TheThrone/Conscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "The Throne was a significant piece to Useé personally as it was created after a therapy session with a psychoanalyst in Barcelona. The painting represents a childhood trauma that Useé repressed but evidently could never fully deal with until much later.
+
+The central figure in the painting is a silhouette, a motif Useé commonly used to symbolize the unconscious. It lacks any defining physical features, representing what is on the inside, rather than the outside.
+
+The setting of the piece takes place in a classroom corner, representing the rules, morality, and societal expectations that Useé felt in his time at school. The rigid structure and emphasis on obedience shows the societal pressure where deviation from the norm is met with punishment or discipline. 
+
+A particularly striking element of this painting is the tall, conical white cap the central figure wears, and with the setting being a classroom, the cap is unmistakably a dunce cap. Here, the figure is Useé, and the painting depicts his repressed childhood trauma of being forced to the front of the classroom and to sit in front of the whole class while wearing a dunce cap. This is the repressed trauma of being standing out in shame, a feeling that was given to a developing Useé and continued to work at his mental state and behavior until adulthood. 
+
+ The black tendrils that surround the figure represent the perceived sharp stares of his classmates that Useé felt at this humiliating time. Additionally, this painting demonstrates projection as the stares from his classmates felt much more powerful to the young Useé than they actually were as his own sense of social anxiety and shame distorted his perception of reality. 
+
+The title, The Throne, presents a striking irony. A throne is typically associated with power, authority, and control, yet here Useé depicts his experience of humiliation and powerlessness. This contradiction demonstrates Useé’s attempt at dealing with his trauma. In this case, he compensates for his past helplessness through titling the piece with an ironic name.
+
+This piece demonstrates how our early experiences shape our behaviors and personalities. Here, Useé highlights one of his key experiences that shaped his self-perception by creating subconscious turmoil and more social anxiety. It is his way of confronting and dealing with his past. [379 words]"
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Usee/TheThrone/Conscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 135.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]The Throne [font_size=42]by Prog Useé"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Usee/TheThrone/Conscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_jd0cy")
+
+[node name="PresentText" type="RichTextLabel" parent="Usee/TheThrone/Conscious/Window"]
+visible = false
+offset_left = 2808.0
+offset_top = 697.0
+offset_right = 3808.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Styx" type="Sprite2D" parent="Usee"]
+top_level = true
+z_index = 1
+position = Vector2(8640, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("8_44pqx")
+
+[node name="LabelText" type="RichTextLabel" parent="Usee/Styx"]
+z_index = 1
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Styx
+[font_size=100
+]By Prog Useé"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Conscious" parent="Usee/Styx" instance=ExtResource("5_iybts")]
+z_as_relative = false
+
+[node name="Window" type="Window" parent="Usee/Styx/Conscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Usee/Styx/Conscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Styx represents Useé’s feelings about his repressed memories and how the repressed memories began to resurface. Useé uses this painting to communicate the aspect of suppression and confrontation in his life, showing the nature of repression and the lasting effects on the subconscious.
+
+The painting uses a red color palette to symbolize trauma. Useé used this red color palette to heighten the emotional intensity of the piece, associating it with internal turmoil and chaos. It reflects his situation where repressed emotions are resurfacing and how he must deal with those emotions in a more capable manner as an adult.
+
+The setting of the piece takes place in a deep forest, representing the deepness and isolation of his psyche. By utilizing this setting, Useé displays an obscure and difficult to navigate area of his mind, fit for dealing with the painful experiences of his past.
+
+Next, the heavy rain obscuring the black central figure in the painting demonstrates repression of the subconscious, but with the figure being still visible, it describes how repressing the subconscious blurs the problem rather than deals with the problem. This shows the flaw in repression where trauma is not treated but buried where it still has an effect on the subconscious. In this case, the trauma of Useé has worked enough on him to resist the repression within his subconscious.
+
+Furthermore, the water of the river represents the subconscious and the central figure being knee-deep in the river represents how desperately Useé’s subconscious is trying to repress his trauma. It shows the struggle to suppress the trauma as the partial submersion indicates that the conscious is partially aware of these buried experiences and is affected by those experiences.
+
+The name, Styx, further reinforces this symbolism as, in Greek mythology, the River Styx is the boundary between the underworld and the living world. Thus, the river represents transition, and Useé being inside this river represents memories in the transition from subconscious to conscious. [326 words]"
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Usee/Styx/Conscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 135.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Styx [font_size=42]by Prog Useé"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Usee/Styx/Conscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_44pqx")
+
+[node name="PresentText" type="RichTextLabel" parent="Usee/Styx/Conscious/Window"]
+visible = false
+offset_left = 2808.0
+offset_top = 697.0
+offset_right = 3808.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Dawn" type="Sprite2D" parent="Usee"]
+top_level = true
+z_index = 1
+position = Vector2(10560, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_mikii")
+
+[node name="LabelText" type="RichTextLabel" parent="Usee/Dawn"]
+z_index = 1
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Dawn
+[font_size=100
+]By Prog Useé"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Conscious" parent="Usee/Dawn" instance=ExtResource("5_iybts")]
+z_as_relative = false
+
+[node name="Window" type="Window" parent="Usee/Dawn/Conscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 135.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Dawn [font_size=42]by Prog Useé"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Usee/Dawn/Conscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_mikii")
+
+[node name="PresentText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
+visible = false
+offset_left = 2808.0
+offset_top = 697.0
+offset_right = 3808.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Duran" type="Node2D" parent="."]
+modulate = Color(0.145098, 0.145098, 0.145098, 1)
+z_index = 1
+
+[node name="Trap" type="Sprite2D" parent="Duran"]
+modulate = Color(0.145098, 0.145098, 0.145098, 1)
+top_level = true
+z_index = 1
+position = Vector2(-960, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("10_5gkuf")
+
+[node name="LabelText" type="RichTextLabel" parent="Duran/Trap"]
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Trap
+[font_size=100
+]By Ignacio Durán"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Subconscious" parent="Duran/Trap" instance=ExtResource("3_7ugbf")]
+show_behind_parent = true
+
+[node name="Window" type="Window" parent="Duran/Trap/Subconscious"]
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Duran/Trap/Subconscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Duran/Trap/Subconscious/Window"]
 offset_top = 30.0
 offset_right = 1440.0
 offset_bottom = 130.0
@@ -148,23 +516,358 @@ size_flags_vertical = 4
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
-text = "[center]Purity [font_size=42]by Prog Usee"
+text = "[center]Trap [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
-[node name="Artwork" type="Sprite2D" parent="SubconsciousPaintings/Purity/Subconscious/Window"]
+[node name="Artwork" type="Sprite2D" parent="Duran/Trap/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_0ixch")
+texture = ExtResource("10_5gkuf")
+
+[node name="PresentText" type="RichTextLabel" parent="Duran/Trap/Subconscious/Window"]
+visible = false
+offset_left = -1032.0
+offset_top = 697.0
+offset_right = -32.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="TwoCities" type="Sprite2D" parent="Duran"]
+modulate = Color(0.145098, 0.145098, 0.145098, 1)
+top_level = true
+z_index = 1
+position = Vector2(-2880, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("12_hrhjj")
+
+[node name="LabelText" type="RichTextLabel" parent="Duran/TwoCities"]
+offset_left = -500.0
+offset_top = 2030.0
+offset_right = 500.0
+offset_bottom = 2510.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center][font_size=160]Two Cities
+[font_size=100
+]By Ignacio Durán"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Subconscious" parent="Duran/TwoCities" instance=ExtResource("3_7ugbf")]
+show_behind_parent = true
+
+[node name="Window" type="Window" parent="Duran/TwoCities/Subconscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Duran/TwoCities/Subconscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Two Cities is undoubtedly Durán’s magnum opus. It was drawn shortly before the passing of his mother, a year before his brother. This painting is the climax of his art career before he begins taking drugs. Two Cities is a neutral artwork Durán creates to express his uncertainty about whether he should follow his id or superego. 
+
+Seen in the painting, A black figure, presumably Durán, faces the floor that displays two faces of his mind. On the left is a beautiful city under the clear sky. A car is seen patiently waiting as civilians cross the street and minding their own. A bright lamp hangs from the post, symbolizing the supervision and order. On the right displays a catastrophic city. It depicts a vehicular assault with a man seemingly run over. Another figure is seen wielding a gun. Boxes are also littered all over the street, isolating the scene from the outside world. The setting sun colors the scenery in an unsettling, yellow light, calling for the pitch-black night to cover up the incident.
+
+It is clear that Durán has a strong understanding of Freud at this point. The three faces of the painting all represent the three forces driving the human consciousness. The perfect blue city symbolizes Durán’s superego. He must be organized down to the second, without time to enjoy himself. However, Durán is also tempted by the id. As seen to the right of the painting, there is a murder in a chaotic city. Another man on the truck wields a gun, presumably the one that shot the victim. A city full of crime and danger is equally as thrilling and lawless. Durán uses this city as a metaphor for his true desires. Lastly, the shadowy figure that looks down, presumably Durán himself, is the ego. 
+
+There is a juxtaposition between the two cities as they each transition to the next along the crosswalk. This highlights the contrast between the two cities, but it also suggests that Durán found the lifestyles equally tempting to follow. It could also be argued that the juxtaposition shows how similar the two cities are. They are like two sides of the same coin, the same city that is superego can also be just as id. This is a metaphor for the human mind, and it also foreshadows Durán’s eventual demise. It suggests that the human mind is easily influenced by its environment. Durán himself was an exemplary artist that would eventually fall victim to a heavy ketamine addiction. 
+
+Two Cities is one of Durán’s most influential pieces in the contemporary and post-Freudian movements. It is able to express his uncertainty about which route he should take. It also shows the similarities between the two cities, a metaphor for how easily that human mind can be influenced by its surroundings. [469 words]"
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Duran/TwoCities/Subconscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 130.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Two Cities [font_size=42]by Ignacio Durán"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Duran/TwoCities/Subconscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("12_hrhjj")
+
+[node name="PresentText" type="RichTextLabel" parent="Duran/TwoCities/Subconscious/Window"]
+visible = false
+offset_left = -1032.0
+offset_top = 697.0
+offset_right = -32.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Nightlife" type="Sprite2D" parent="Duran"]
+modulate = Color(0.145098, 0.145098, 0.145098, 1)
+top_level = true
+z_index = 1
+position = Vector2(-4800, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("13_awf5m")
+
+[node name="LabelText" type="RichTextLabel" parent="Duran/Nightlife"]
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Nightlife
+[font_size=100
+]By Ignacio Durán"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Subconscious" parent="Duran/Nightlife" instance=ExtResource("3_7ugbf")]
+show_behind_parent = true
+
+[node name="Window" type="Window" parent="Duran/Nightlife/Subconscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Duran/Nightlife/Subconscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Nightlife is an experimental contemporary artwork by Durán that depicts the sensational high of ketamine. He supposedly created this piece from his imagination rather than the conventional method of using reference.
+
+This piece uses many contrasting colors, intentionally becoming an eyesore. Buildings on the left are painted in strange color palettes. The perception of the viewer is also warped like they are peering through a convex lens. The sides of the building are curled outwards, the streetlights are flimsily leaning inwards, and the drunken man seems to be stumbling with perspective from the viewer. This strange style of art could be his attempt at capturing the experience of euphoria, which would explain all these effects. Bright colors symbolize novelty and elation, and the warped perception makes everything become elastic and exaggerated. All of these effects are caused by ketamine.
+
+Durán intentionally differentiates between the two sides of the artwork, much like in Two Cities. To the left, bars, casinos, brothels, and other stores offering pleasurable activities. The bright colors have a double meaning in this instance, as they seem to be extremely appealing. This side of the road symbolizes the id, which Durán paints in alluring light. Contrary, the right is monotonously painted grey. This side of the road doesn’t seem too much out of the ordinary, aside from the warping effect. It is orderly, with what seems to be a house and a large office building. The superego is symbolized here in an unattractive manner. It is clear at this point that Durán seems to be leaning towards the id, which is lust and temptation. Even the ordinary, his superego, has been warped by the drugs he took.
+
+Durán created this painting to highlight the attractiveness of sin. Colors overwhelm, almost nauseate the viewer and pull their attention from the greyscale structures on the other side of the road. He also captures the sensation of euphoria with warped, bouncing structures. Overall, it creates a sensational art piece that leaves viewers unease and curious about the world of sin. In addition, this painting also has a Freudian meaning which he might not have intended. He has already fallen too far into the grips of the id. By consuming ketamine, his superego is warped, and without it to take control, he will only fall deeper into primal instincts and desires. 
+
+With the passing of his mother and brother, he has lost most of his drive in living. In Two Cities, he was taking more of a neutral stance between the superego and the id. However, this painting clearly glorifies one side more than the other. This painting will mark the downfall in Ignacio Durán’s art career. [445 words]"
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Duran/Nightlife/Subconscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 130.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Nightlife [font_size=42]by Ignacio Durán"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Duran/Nightlife/Subconscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("13_awf5m")
+
+[node name="PresentText" type="RichTextLabel" parent="Duran/Nightlife/Subconscious/Window"]
+visible = false
+offset_left = -1032.0
+offset_top = 697.0
+offset_right = -32.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Pain" type="Sprite2D" parent="Duran"]
+modulate = Color(0.145098, 0.145098, 0.145098, 1)
+top_level = true
+z_index = 1
+position = Vector2(-6720, 400)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("14_ol601")
+
+[node name="LabelText" type="RichTextLabel" parent="Duran/Pain"]
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Pain
+[font_size=100
+]By Ignacio Durán"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Subconscious" parent="Duran/Pain" instance=ExtResource("3_7ugbf")]
+show_behind_parent = true
+
+[node name="Window" type="Window" parent="Duran/Pain/Subconscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Duran/Pain/Subconscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Pain is a self-portrait that  is also a representation of Durán’s mental state. It is one of the final two paintings found after Durán’s death from hallucinogen overdose. 
+
+Durán’s painting seems very simple at a glance, yet it is effective in conveying its meaning. The bright, saturated red paired with the warm-colored backdrop makes it seem as if he is undergoing severe pain, burning. Durán also intentionally distorts his face, only leaving a face in agony. This can have various meanings. It can imply that the torment is so significant that he cannot remember who he is. Recall that Durán was physically dependent on ketamine during this time, which can also suggest that it has completely changed who he is. This is to the point that he cannot even recognize himself anymore. 
+
+Aside from his real struggles, another meaning can be extracted from this self portrait. As mentioned before, the warm-colored backdrop and piercing red give the idea that Durán might be burning, like he is in hell. While his body is mostly red, there are still some parts of him that are different color shades. The red symbolizes the devil, or the id in Freudian terms, who is slowly consuming his body. Before long, he will become fully red, which would mean that he has completely lost his humanity. This can be a metaphor for his gradual deterioration towards the sins of life, which have also been hinted in Nightlife. Unlike in that painting however, Durán depicts the id as the devil rather than a colorful, inviting strip mall. Durán must have finally realized the dangers of temptation, but has already fallen too far to help himself. He has become the embodiment of the id, the one who only lives by the Pleasure Principle. 
+
+Pain might seem very simple at a glance, but it is filled to the brim with various meanings, all of which helps the viewer understand more about Durán’s torment and conflict. It helps to express the physical and mental pain he is undergoing, through its bright colors and distorted features. The same saturated red colors paired with the warm background also informs readers that Durán has fallen too far into the pleasures of life, becoming one equal to the devil, or the id. [378 words]"
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Duran/Pain/Subconscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 130.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Pain [font_size=42]by Ignacio Durán"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Duran/Pain/Subconscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("14_ol601")
+
+[node name="PresentText" type="RichTextLabel" parent="Duran/Pain/Subconscious/Window"]
+visible = false
+offset_left = -1032.0
+offset_top = 697.0
+offset_right = -32.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Untitled" type="Sprite2D" parent="Duran"]
+modulate = Color(0.145098, 0.145098, 0.145098, 1)
+top_level = true
+z_index = 1
+position = Vector2(-8640, 400)
+scale = Vector2(0.15, 0.15)
+
+[node name="LabelText" type="RichTextLabel" parent="Duran/Untitled"]
+offset_left = -500.0
+offset_top = 2000.0
+offset_right = 500.0
+offset_bottom = 2480.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Untitled
+[font_size=100
+]By Ignacio Durán"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Subconscious" parent="Duran/Untitled" instance=ExtResource("3_7ugbf")]
+show_behind_parent = true
+
+[node name="Window" type="Window" parent="Duran/Untitled/Subconscious"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="Duran/Untitled/Subconscious/Window"]
+offset_left = 720.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+shortcut_keys_enabled = false
+
+[node name="TitleText" type="RichTextLabel" parent="Duran/Untitled/Subconscious/Window"]
+offset_top = 30.0
+offset_right = 1440.0
+offset_bottom = 130.0
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]Untitled [font_size=42]by Ignacio Durán"
+fit_content = true
+scroll_active = false
+
+[node name="Artwork" type="Sprite2D" parent="Duran/Untitled/Subconscious/Window"]
+position = Vector2(360, 440)
+scale = Vector2(0.2, 0.2)
+
+[node name="PresentText" type="RichTextLabel" parent="Duran/Untitled/Subconscious/Window"]
+visible = false
+offset_left = -1032.0
+offset_top = 697.0
+offset_right = -32.0
+offset_bottom = 1177.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 200
+bbcode_enabled = true
+text = "[center]Purity
+[font_size=100
+]By Prog Usee"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
 
 [node name="Player" parent="." instance=ExtResource("7_wfhu6")]
-z_index = 2
-position = Vector2(288, 775)
+z_index = 3
+position = Vector2(960, 750)
 script = ExtResource("2_lydnn")
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-288, -775)
-offset = Vector2(960, 540)
 
 [node name="PointLight2D" type="PointLight2D" parent="Player"]
 scale = Vector2(7, 7)
@@ -176,15 +879,32 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_filter = 1
 texture = SubResource("GradientTexture2D_ucecw")
 
-[node name="Escape" type="RichTextLabel" parent="Player"]
-offset_left = -288.0
-offset_top = -775.0
-offset_right = 712.0
-offset_bottom = -735.0
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+range_z_min = -1
+range_z_max = -1
+range_layer_min = -1
+range_layer_max = -1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(960, 540)
+script = ExtResource("17_1cox0")
+
+[node name="Escape" type="RichTextLabel" parent="Camera2D"]
+offset_right = 1000.0
+offset_bottom = 40.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
 text = " Press \"Esc\" to quit."
 fit_content = true
 
-[connection signal="close_requested" from="SubconsciousPaintings/Purity/Subconscious/Window" to="SubconsciousPaintings/Purity/Subconscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Usee/Purity/Conscious/Window" to="Usee/Purity/Conscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Usee/Streets/Conscious/Window" to="Usee/Streets/Conscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Usee/TheThrone/Conscious/Window" to="Usee/TheThrone/Conscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Usee/Styx/Conscious/Window" to="Usee/Styx/Conscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Usee/Dawn/Conscious/Window" to="Usee/Dawn/Conscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Duran/Trap/Subconscious/Window" to="Duran/Trap/Subconscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Duran/TwoCities/Subconscious/Window" to="Duran/TwoCities/Subconscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Duran/Nightlife/Subconscious/Window" to="Duran/Nightlife/Subconscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Duran/Pain/Subconscious/Window" to="Duran/Pain/Subconscious" method="_on_window_close_requested"]
+[connection signal="close_requested" from="Duran/Untitled/Subconscious/Window" to="Duran/Untitled/Subconscious" method="_on_window_close_requested"]

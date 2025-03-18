@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://2hauu5tpm3mk"]
 
 [ext_resource type="Texture2D" uid="uid://dngfrdprma20d" path="res://assets/frame.png" id="1_2455m"]
-[ext_resource type="Script" path="res://scripts/painting.gd" id="1_isvgs"]
+[ext_resource type="Script" path="res://scripts/popup.gd" id="1_isvgs"]
 [ext_resource type="Texture2D" uid="uid://bv5f4qjiudras" path="res://assets/label.png" id="2_luhe4"]
 
 [sub_resource type="Gradient" id="Gradient_57js1"]
