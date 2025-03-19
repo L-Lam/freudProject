@@ -1082,6 +1082,15 @@ rotation = -0.602139
 scale = Vector2(0.015, 0.015)
 texture = ExtResource("20_ariq0")
 
+[node name="Butterfly15" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+z_as_relative = false
+position = Vector2(1844, -635)
+rotation = -0.872665
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("20_ariq0")
+
 [node name="ButtonGroup" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -1223,6 +1232,56 @@ Shortly after his rising success in the art industry, his mother would pass away
 The layers of depth his paintings newly found in his most difficult times would get him the recognition he deserves. Today, we are here to tell you about the story of the curious man, who strayed from success and succumbed to drug addiction. We, the Museum of Freudian Art, seek to spread Durán’s story in his artwork to all. [399 words]"
 shortcut_keys_enabled = false
 
+[node name="Credits" type="Node2D" parent="ButtonGroup"]
+position = Vector2(888, 30)
+script = ExtResource("19_kyk2g")
+
+[node name="Label" type="Sprite2D" parent="ButtonGroup/Credits"]
+scale = Vector2(0.075, 0.05)
+texture = ExtResource("24_5c7tj")
+centered = false
+
+[node name="LabelText" type="RichTextLabel" parent="ButtonGroup/Credits"]
+offset_left = 25.0
+offset_top = 10.0
+offset_right = 233.0
+offset_bottom = 174.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "  Credits"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Button" type="Button" parent="ButtonGroup/Credits"]
+layout_direction = 2
+offset_right = 144.0
+offset_bottom = 53.0
+theme_override_fonts/font = ExtResource("4_r6ve1")
+theme_override_font_sizes/font_size = 20
+flat = true
+
+[node name="Window" type="Window" parent="ButtonGroup/Credits"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="ButtonGroup/Credits/Window"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 1420.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[center]Lead Developer: Lawrence Lam
+Assets Creator: Daniel Huang and Lawrence Lam
+Storyboard Writer: Daniel Huang and Lawrence Lam
+Teacher: Mr. (Dale) Smith"
+shortcut_keys_enabled = false
+
 [node name="AboutUs" type="Node2D" parent="ButtonGroup"]
 position = Vector2(888, 250)
 script = ExtResource("19_kyk2g")
@@ -1287,8 +1346,7 @@ Established in 1989, we have worked diligently to collect and present Freudian a
 
 We are dedicated to collecting, presenting, and interpreting  art that exudes Freudian ideas, in all visual mediums. When we are presented with a piece of art, we always ask where the Freud influence in the art is. While the artist may not know the influence exists, we certainly do. Our job and hope is to enlighten everyone about the Freud within themselves and paint a clear picture of the Freud in culture.
 
-With our venue in Los Angeles, MOFA Grand Avenue, we engage audiences with Freud and foster introspection. [241 words]
-"
+With our venue in Los Angeles, MOFA Grand Avenue, we engage audiences with Freud and foster introspection. [241 words]"
 shortcut_keys_enabled = false
 
 [node name="AboutGallery" type="Node2D" parent="ButtonGroup"]
@@ -1370,6 +1428,10 @@ shortcut_keys_enabled = false
 [connection signal="mouse_exited" from="ButtonGroup/Duran/Button" to="ButtonGroup/Duran" method="_on_button_mouse_exited"]
 [connection signal="pressed" from="ButtonGroup/Duran/Button" to="ButtonGroup/Duran" method="_on_button_pressed"]
 [connection signal="close_requested" from="ButtonGroup/Duran/Window" to="ButtonGroup/Duran" method="_on_window_close_requested"]
+[connection signal="mouse_entered" from="ButtonGroup/Credits/Button" to="ButtonGroup/Credits" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="ButtonGroup/Credits/Button" to="ButtonGroup/Credits" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="ButtonGroup/Credits/Button" to="ButtonGroup/Credits" method="_on_button_pressed"]
+[connection signal="close_requested" from="ButtonGroup/Credits/Window" to="ButtonGroup/Credits" method="_on_window_close_requested"]
 [connection signal="mouse_entered" from="ButtonGroup/AboutUs/Button" to="ButtonGroup/AboutUs" method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="ButtonGroup/AboutUs/Button" to="ButtonGroup/AboutUs" method="_on_button_mouse_exited"]
 [connection signal="pressed" from="ButtonGroup/AboutUs/Button" to="ButtonGroup/AboutUs" method="_on_button_pressed"]
