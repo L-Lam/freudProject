@@ -2,9 +2,9 @@ extends Node2D
 
 
 func _process(float) -> void:
-	if position.x > 11520:
+	if position.x >= 11520:
 		position.x = 11520
-	if position.x < -9600:
+	if position.x <= -9600:
 		position.x = -9600
 	
 	if Input.is_action_pressed("ui_left") and -9600 <= position.x:
@@ -17,11 +17,11 @@ func _process(float) -> void:
 		$AnimatedSprite2D.play("move")
 		position.x += 7
 		
-	elif Input.is_action_just_pressed("right_dash") and position.x <= 11520:
+	elif Input.is_action_just_pressed("right_dash") and position.x < 11520:
 		$AnimatedSprite2D.flip_h = false
 		position.x += 960
 	
-	elif Input.is_action_just_pressed("left_dash") and -9600 <= position.x:
+	elif Input.is_action_just_pressed("left_dash") and -9600 < position.x:
 		$AnimatedSprite2D.flip_h = true
 		position.x -= 960
 

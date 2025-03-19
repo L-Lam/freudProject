@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dnii3gvrl8glt"]
+[gd_scene load_steps=27 format=3 uid="uid://dnii3gvrl8glt"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_xf6mb"]
 [ext_resource type="Texture2D" uid="uid://ddk0ajaai7t6c" path="res://assets/Purity.png" id="2_0ixch"]
@@ -18,6 +18,12 @@
 [ext_resource type="Texture2D" uid="uid://dxi448o627oq" path="res://assets/Pain.png" id="14_ol601"]
 [ext_resource type="Texture2D" uid="uid://chy74fmbls1i1" path="res://assets/Love.png" id="15_k1aeq"]
 [ext_resource type="Script" path="res://scripts/camera.gd" id="17_1cox0"]
+[ext_resource type="Script" path="res://scripts/popup.gd" id="19_kyk2g"]
+[ext_resource type="Texture2D" uid="uid://l0k7jotqywhy" path="res://assets/demo.png" id="20_82cid"]
+[ext_resource type="Texture2D" uid="uid://cm60ouglub7ja" path="res://assets/butterfly.png" id="20_ariq0"]
+[ext_resource type="Texture2D" uid="uid://cfbgbr88wka4c" path="res://assets/butterfly2.png" id="21_63up4"]
+[ext_resource type="Texture2D" uid="uid://balnpkw333qu2" path="res://assets/butterfly3.png" id="22_ncqui"]
+[ext_resource type="Texture2D" uid="uid://bv5f4qjiudras" path="res://assets/label.png" id="24_5c7tj"]
 
 [sub_resource type="Gradient" id="Gradient_5m6sg"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -143,26 +149,23 @@ text = "[center]Purity [font_size=42]by Prog Useé"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Usee/Purity/Conscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1946"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Usee/Purity/Conscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_0ixch")
-
-[node name="PresentText" type="RichTextLabel" parent="Usee/Purity/Conscious/Window"]
-visible = false
-offset_left = 2808.0
-offset_top = 697.0
-offset_right = 3808.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Streets" type="Sprite2D" parent="Usee"]
 top_level = true
@@ -227,26 +230,23 @@ text = "[center]Streets [font_size=42]by Prog Useé"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Usee/Streets/Conscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1946"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Usee/Streets/Conscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_dm46c")
-
-[node name="PresentText" type="RichTextLabel" parent="Usee/Streets/Conscious/Window"]
-visible = false
-offset_left = 2808.0
-offset_top = 697.0
-offset_right = 3808.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="TheThrone" type="Sprite2D" parent="Usee"]
 top_level = true
@@ -315,26 +315,23 @@ text = "[center]The Throne [font_size=42]by Prog Useé"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Usee/TheThrone/Conscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1948"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Usee/TheThrone/Conscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("7_jd0cy")
-
-[node name="PresentText" type="RichTextLabel" parent="Usee/TheThrone/Conscious/Window"]
-visible = false
-offset_left = 2808.0
-offset_top = 697.0
-offset_right = 3808.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Styx" type="Sprite2D" parent="Usee"]
 top_level = true
@@ -401,26 +398,23 @@ text = "[center]Styx [font_size=42]by Prog Useé"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Usee/Styx/Conscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1949"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Usee/Styx/Conscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("8_44pqx")
-
-[node name="PresentText" type="RichTextLabel" parent="Usee/Styx/Conscious/Window"]
-visible = false
-offset_left = 2808.0
-offset_top = 697.0
-offset_right = 3808.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Dawn" type="Sprite2D" parent="Usee"]
 top_level = true
@@ -485,26 +479,23 @@ text = "[center]Dawn [font_size=42]by Prog Useé"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1950"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Usee/Dawn/Conscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("9_mikii")
-
-[node name="PresentText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
-visible = false
-offset_left = 2808.0
-offset_top = 697.0
-offset_right = 3808.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Duran" type="Node2D" parent="."]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
@@ -563,26 +554,23 @@ text = "[center]Trap [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Duran/Trap/Subconscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1974"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Duran/Trap/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("10_5gkuf")
-
-[node name="PresentText" type="RichTextLabel" parent="Duran/Trap/Subconscious/Window"]
-visible = false
-offset_left = -1032.0
-offset_top = 697.0
-offset_right = -32.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="TwoCities" type="Sprite2D" parent="Duran"]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
@@ -647,26 +635,23 @@ text = "[center]Two Cities [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Duran/TwoCities/Subconscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1975"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Duran/TwoCities/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("12_hrhjj")
-
-[node name="PresentText" type="RichTextLabel" parent="Duran/TwoCities/Subconscious/Window"]
-visible = false
-offset_left = -1032.0
-offset_top = 697.0
-offset_right = -32.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Nightlife" type="Sprite2D" parent="Duran"]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
@@ -731,26 +716,23 @@ text = "[center]Nightlife [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Duran/Nightlife/Subconscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1977"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Duran/Nightlife/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_awf5m")
-
-[node name="PresentText" type="RichTextLabel" parent="Duran/Nightlife/Subconscious/Window"]
-visible = false
-offset_left = -1032.0
-offset_top = 697.0
-offset_right = -32.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Pain" type="Sprite2D" parent="Duran"]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
@@ -813,26 +795,23 @@ text = "[center]Pain [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
+[node name="DateText" type="RichTextLabel" parent="Duran/Pain/Subconscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1977-79"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Duran/Pain/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("14_ol601")
-
-[node name="PresentText" type="RichTextLabel" parent="Duran/Pain/Subconscious/Window"]
-visible = false
-offset_left = -1032.0
-offset_top = 697.0
-offset_right = -32.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
 
 [node name="Love" type="Sprite2D" parent="Duran"]
 modulate = Color(0.145098, 0.145098, 0.145098, 1)
@@ -874,6 +853,15 @@ offset_bottom = 760.0
 theme_override_fonts/normal_font = ExtResource("4_r6ve1")
 theme_override_font_sizes/normal_font_size = 32
 bbcode_enabled = true
+text = "Love was the last of the two paintings found in Durán’s tenament following his death. It shows a nude man, presumably Durán, lying on the lap of a hooded figure, presumably the Grim Reaper. He is holding a drug needle, about to inject it into Duran’s arm.
+
+Durán’s Love comes with multiple meanings. He, for one, is stripped without any clothing articles, which symbolizes his conscious state. In his mind, he is stripped of any inauthentic thoughts, ready to reflect on who he is. However, he seems to be unconscious as he lies motionless on the Grim Reaper’s lap. The Grim Reaper prepares a drug needle, ready to inject. The Grim Reaper is widely known in Western culture as the guide of death. In addition to that, the painting seems to be set in a grayscale dimension. All of these factors contribute to the idea of death symbolized in the painting. Overall, Love could be a metaphor for Durán’s incapacity to fight, fully aware that every injection puts him closer to death’s doorstep. It also shows that Durán has already accepted his fate as he willingly gives himself up to the guide of death.
+
+In addition, this painting might also reference the stages of development. A clothless Durán represents the purity of a newborn child. He rests on his mother’s lap, constantly requiring her care to remain calm. This is ironic because previously in his life, he had been well off without it. He had regressed, and now he is stuck in his growth developmental stage again. Durán compares himself to that of a child. Like the child requiring food, he needed drugs.
+
+A reason Durán might have named this painting Love goes off of the idea introduced earlier than he had already accepted his fate. He might’ve been fascinated by death instead. Since the passing of his mother and brother, Durán had longed to see them again. Christianity, the dominant religion at the time, believed that lost souls after death travel to their afterlife in heaven. It wouldn’t be unnatural for Durán to long for death in order to meet them again. As a form of love, the Grim Reaper helps to put him out of his misery. In this context, this would be lethal injection, as opposed to ketamine.
+
+Durán’s Love has various interpretations. It could be understood as his inability to control his bodily dependence on ketamine. It can also be seen as a comparison between his current state to that of a child. Only this time, there is no one to lift him out of his regression. Unable to overcome addiction, he succumbs to the Grim Reaper. Lastly, Durán’s Love can also be interpreted literally as his love for death. He longs to meet his family again, and the Grim Reaper is here to put him down. These are only some of the many interpretations of Durán’s Love. He had left behind such an intricate piece, leaving it to the viewers to understand his life story. [507 words]"
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
@@ -888,29 +876,26 @@ text = "[center]Love [font_size=42]by Ignacio Durán"
 fit_content = true
 scroll_active = false
 
+[node name="DateText2" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
+offset_left = 1300.0
+offset_top = 50.0
+offset_right = 2300.0
+offset_bottom = 530.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "1977-79"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
 [node name="Artwork" type="Sprite2D" parent="Duran/Love/Subconscious/Window"]
 position = Vector2(360, 440)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("15_k1aeq")
 
-[node name="PresentText" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
-visible = false
-offset_left = -1032.0
-offset_top = 697.0
-offset_right = -32.0
-offset_bottom = 1177.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 200
-bbcode_enabled = true
-text = "[center]Purity
-[font_size=100
-]By Prog Usee"
-fit_content = true
-scroll_active = false
-shortcut_keys_enabled = false
-
 [node name="Player" parent="." instance=ExtResource("7_wfhu6")]
-z_index = 3
+z_index = 99
 position = Vector2(960, 750)
 script = ExtResource("2_lydnn")
 
@@ -937,11 +922,418 @@ bbcode_enabled = true
 text = " Press \"Esc\" to quit."
 fit_content = true
 
+[node name="ScriptHolder" type="Node2D" parent="Camera2D"]
+script = ExtResource("19_kyk2g")
+
+[node name="Button" type="Button" parent="Camera2D/ScriptHolder"]
+layout_direction = 2
+offset_left = 1705.0
+offset_right = 1920.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("4_r6ve1")
+theme_override_font_sizes/font_size = 20
+text = "Click me for instructions!"
+
+[node name="Window" type="Window" parent="Camera2D/ScriptHolder"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="Instructions" type="Sprite2D" parent="Camera2D/ScriptHolder/Window"]
+texture = ExtResource("20_82cid")
+centered = false
+
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 range_z_min = -1
 range_z_max = -1
 range_layer_min = -1
 range_layer_max = -1
+shadow_color = Color(0, 0, 0, 1)
+shadow_filter = 2
+
+[node name="Butterflies" type="Node2D" parent="."]
+position = Vector2(-892, 704)
+
+[node name="Butterfly1" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.144063, 0.144063, 0.144063, 1)
+z_index = 3
+z_as_relative = false
+position = Vector2(-119, -9)
+rotation = -1.29154
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("20_ariq0")
+
+[node name="Butterfly2" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.145098, 0.145098, 0.145098, 1)
+z_index = 3
+position = Vector2(-1917, 28)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("21_63up4")
+
+[node name="Butterfly3" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.145098, 0.145098, 0.145098, 1)
+z_index = 3
+position = Vector2(-3975, 26.0001)
+rotation = -0.479966
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("22_ncqui")
+
+[node name="Butterfly4" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.144063, 0.144063, 0.144063, 1)
+z_index = 3
+z_as_relative = false
+position = Vector2(-5807, -12.9999)
+rotation = -0.261799
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("20_ariq0")
+
+[node name="Butterfly5" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.145098, 0.145098, 0.145098, 1)
+z_index = 3
+position = Vector2(-7775, 51.0006)
+rotation = -0.959931
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("21_63up4")
+
+[node name="Butterfly6" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.77084, 0.770839, 0.770839, 1)
+z_index = 3
+position = Vector2(5747, -4.9998)
+rotation = -0.959931
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("21_63up4")
+
+[node name="Butterfly7" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+position = Vector2(3715, 45.9999)
+rotation = 0.118682
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("22_ncqui")
+
+[node name="Butterfly8" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+z_as_relative = false
+position = Vector2(7664, 45.0003)
+rotation = -1.29154
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("20_ariq0")
+
+[node name="Butterfly9" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+position = Vector2(9484, 20.0001)
+rotation = -1.52367
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("21_63up4")
+
+[node name="Butterfly10" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+position = Vector2(11507, 10.9996)
+rotation = 0.596903
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("22_ncqui")
+
+[node name="Butterfly11" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+position = Vector2(1912, -334)
+rotation = -0.162316
+scale = Vector2(0.007, 0.007)
+texture = ExtResource("22_ncqui")
+
+[node name="Butterfly12" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+position = Vector2(1800, -404)
+rotation = -1.25315
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("21_63up4")
+
+[node name="Butterfly13" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+z_as_relative = false
+position = Vector2(1214, -142)
+rotation = -0.253073
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("20_ariq0")
+
+[node name="Butterfly14" type="Sprite2D" parent="Butterflies"]
+self_modulate = Color(0.772549, 0.772549, 0.772549, 1)
+z_index = 3
+z_as_relative = false
+position = Vector2(2446, -99.9999)
+rotation = -0.602139
+scale = Vector2(0.015, 0.015)
+texture = ExtResource("20_ariq0")
+
+[node name="ButtonGroup" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Usee" type="Node2D" parent="ButtonGroup"]
+position = Vector2(1470, 540)
+script = ExtResource("19_kyk2g")
+
+[node name="Label" type="Sprite2D" parent="ButtonGroup/Usee"]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("24_5c7tj")
+centered = false
+
+[node name="LabelText" type="RichTextLabel" parent="ButtonGroup/Usee"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 1020.0
+offset_bottom = 500.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Prog Useé"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Button" type="Button" parent="ButtonGroup/Usee"]
+layout_direction = 2
+offset_right = 144.0
+offset_bottom = 81.0
+theme_override_fonts/font = ExtResource("4_r6ve1")
+theme_override_font_sizes/font_size = 20
+flat = true
+
+[node name="Window" type="Window" parent="ButtonGroup/Usee"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="TitleText" type="RichTextLabel" parent="ButtonGroup/Usee/Window"]
+offset_top = 20.0
+offset_right = 1440.0
+offset_bottom = 120.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[font_size=64][center]Prog Useé"
+shortcut_keys_enabled = false
+
+[node name="BodyText" type="RichTextLabel" parent="ButtonGroup/Usee/Window"]
+offset_left = 40.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "September 28, 1927 - May 6, 1964
+
+Prog Useé is one of the most prominent Freudian expressionist painters of the mid-twentieth century. Prog Useé is greatly known for his chilling depictions and expressions of his childhood translated into dark, shadowy figures in abstract settings. He is best known as one of the leading painters of the Freudian art movement, boasting abstract artwork with deep meaning to it. 
+
+As a child, Useé was late in development. He had been entirely mute up until his fourth birthday, and he was said to have lacked any form of responsibility in taking care of himself. As a result of this, he was neglected by his parents and shunned by his peers. Useé grew up in isolation, going some days without even uttering a single word. This lack of social interaction makes it difficult for him to communicate orally or writing, however he compensated with his vivid expressions along the canvas. It was the only way Useé could express his feelings, and this ignited his passion and pursuit for art.
+
+Useé began painting for the Art Club during his high school years. There, he would find mild success, making occasional appearances in art newsletters and magazines and receiving several commissions. He would drop out of school to concentrate on art, living in a tenement on minimal income. Useé continued to pursue art knowledge in Barcelona, Spain and began to produce art professionally. During this time, he worked on some of his most prominently known pieces today, including Purity and Streets. The intriguing depiction of his unpleasant childhood caught much attention within the industry. Which allowed him great success for a while. 
+
+However, Useé halted his art career to continue pursuing education in Barcelona about psychology in order to break from his artist fatigue. There, he furthered his already existing knowledge of Freudian theory. Useé used these Freudian concepts in his artworks, which are his greatest works we know of today. The Throne and Dawn are not only his best works, but are debatably some of the best works of art of the time period. 
+
+Following the movement however, Useé seems to have faded from the limelight. He began to produce experimental, contemporary works much to no avail. He would pass away a lonely and penniless man on the sixth of May in 1964 to pneumonia. Today, we celebrate his idea and passion in Freudian art here in the Museum of Freudian Art (MoFA), where we wish to spread the ideas of Freudian expression. As our name suggests, we are here to honor one of the greatest Freudian painters of all time. [435 words]"
+shortcut_keys_enabled = false
+
+[node name="Duran" type="Node2D" parent="ButtonGroup"]
+position = Vector2(306, 540)
+script = ExtResource("19_kyk2g")
+
+[node name="Label" type="Sprite2D" parent="ButtonGroup/Duran"]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("24_5c7tj")
+centered = false
+
+[node name="LabelText" type="RichTextLabel" parent="ButtonGroup/Duran"]
+offset_left = 40.0
+offset_top = 10.0
+offset_right = 1040.0
+offset_bottom = 490.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Ignacio 
+Durán"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Button" type="Button" parent="ButtonGroup/Duran"]
+layout_direction = 2
+offset_right = 144.0
+offset_bottom = 81.0
+theme_override_fonts/font = ExtResource("4_r6ve1")
+theme_override_font_sizes/font_size = 20
+flat = true
+
+[node name="Window" type="Window" parent="ButtonGroup/Duran"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="TitleText" type="RichTextLabel" parent="ButtonGroup/Duran/Window"]
+offset_top = 20.0
+offset_right = 1440.0
+offset_bottom = 120.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[font_size=64][center]Ignacio Durán"
+shortcut_keys_enabled = false
+
+[node name="BodyText" type="RichTextLabel" parent="ButtonGroup/Duran/Window"]
+offset_left = 40.0
+offset_top = 120.0
+offset_right = 1400.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "March 20, 1950 - September 23, 1979
+
+Ignacio Durán is a notable, critically acclaimed artist of the mid-late twentieth century. He is best known for his varying styles of paintings throughout the different highs and lows of his life. The artworks tell the narrative of Ignacio Durán from the start to the end of his life. 
+
+Durán was born in Madrid, Spain. It wouldn’t be too long before he moved to New York City, where he would remain for a large majority of his life. There, Durán lived in a loving family of the middle-class. He was an intelligent student, and he quickly stood out amongst his peers during his adolescence. He graduated from high school as the salutatorian of his year. Immediately after, Durán attended New York University as a law student.
+
+However, Durán eventually decided to switch to becoming an art student, and he found decent success within the art industry in selling paintings and taking on commissions. Durán graduated as a valedictorian from New York University and began working as an artist under Marvel Comics, primarily painting poster and advertisement backgrounds. On the side, he painted some of his most outstanding pieces today, including Two Cities.
+
+Durán’s mother passed away from coronary artery disease several years after his employment. His brother would also pass away in a car accident the following year. As a result, Durán fell into clinical depression and quit his job. His artwork lost its purity, now harboring his pain and hardships. Durán also became physically addicted to ketamine, which is shown in many of his paintings as a challenge to overcome. He would also sadly pass to a drug overdose on the twenty-third of September in 1979. We, the Museum of Freudian Art, seek to spread Durán’s story in his artwork to all. [293 words]"
+shortcut_keys_enabled = false
+
+[node name="AboutUs" type="Node2D" parent="ButtonGroup"]
+position = Vector2(888, 250)
+script = ExtResource("19_kyk2g")
+
+[node name="Label" type="Sprite2D" parent="ButtonGroup/AboutUs"]
+scale = Vector2(0.075, 0.05)
+texture = ExtResource("24_5c7tj")
+centered = false
+
+[node name="LabelText" type="RichTextLabel" parent="ButtonGroup/AboutUs"]
+offset_left = 25.0
+offset_top = 10.0
+offset_right = 233.0
+offset_bottom = 174.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "About Us"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Button" type="Button" parent="ButtonGroup/AboutUs"]
+layout_direction = 2
+offset_right = 144.0
+offset_bottom = 53.0
+theme_override_fonts/font = ExtResource("4_r6ve1")
+theme_override_font_sizes/font_size = 20
+flat = true
+
+[node name="Window" type="Window" parent="ButtonGroup/AboutUs"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="ButtonGroup/AboutUs/Window"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 1420.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[font_size=64][color=RED]About Us
+[font_size=48]Freud is everywhere.
+
+[font_size=36]Mission Statement:
+[color=WHITE][font_size=24]Highlight the Freud wherever, whoever, whenever.
+
+[color=RED][font_size=36]WE ARE A MUSEUM.
+[font_size=24][color=WHITE]We collect, preserve, and present Freudian art, created intentionally or not.
+[color=RED][font_size=36]WE INTERPRET.
+[font_size=24][color=WHITE]We gather the context of the artwork and bring Freudian meaning to the art from the context.
+[color=RED][font_size=36]WE ARE ACTIVE.
+[font_size=24][color=WHITE]We look for the Freud as his ideas are so embedded in our culture.
+We believe Freudian ideas are timeless and everywhere.
+We spread awareness of Freud’s ideas and its effect on culture.
+We help artists create new Freudian art.
+
+Established in 1989, we have worked diligently to collect and present Freudian art. We hold the most Freudian and psychologically affecting art in the world, totaling to over 900 objects, and have diverse and significant exhibitions highlighting the Freud within us all. We also seek independent artists and donate to them to support and foster Freudian art.
+
+We are dedicated to collecting, presenting, and interpreting  art that exudes Freudian ideas, in all visual mediums. When we are presented with a piece of art, we always ask where the Freud influence in the art is. While the artist may not know the influence exists, we certainly do. Our job and hope is to enlighten everyone about the Freud within themselves and paint a clear picture of the Freud in culture.
+
+With our venue in Los Angeles, MOFA Grand Avenue, we engage audiences with Freud and foster introspection. [241 words]
+"
+shortcut_keys_enabled = false
+
+[node name="AboutGallery" type="Node2D" parent="ButtonGroup"]
+position = Vector2(888, 310)
+script = ExtResource("19_kyk2g")
+
+[node name="Label" type="Sprite2D" parent="ButtonGroup/AboutGallery"]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("24_5c7tj")
+centered = false
+
+[node name="LabelText" type="RichTextLabel" parent="ButtonGroup/AboutGallery"]
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 135.0
+offset_bottom = 490.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "[center]About the 
+Gallery"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Button" type="Button" parent="ButtonGroup/AboutGallery"]
+layout_direction = 2
+offset_right = 145.0
+offset_bottom = 81.0
+theme_override_fonts/font = ExtResource("4_r6ve1")
+theme_override_font_sizes/font_size = 20
+flat = true
+
+[node name="Window" type="Window" parent="ButtonGroup/AboutGallery"]
+auto_translate_mode = 1
+initial_position = 1
+size = Vector2i(1440, 810)
+visible = false
+
+[node name="BodyText" type="RichTextLabel" parent="ButtonGroup/AboutGallery/Window"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 1420.0
+offset_bottom = 760.0
+theme_override_fonts/normal_font = ExtResource("4_r6ve1")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[color=RED][font_size=64]About The Gallery
+[font_size=48]Foster Introspection
+
+PURPOSE:
+[color=WHITE][font_size=36]Present and interpret 10 art pieces with Freudian ideas.
+
+This art gallery experience will immerse you, the player, in an art gallery that highlights the Freud in 10 drawings by two artists whose works are about their lives and the Freudian ideas that are ingrained in them.
+
+If you find this artwork interesting, come see our full collection at the MoFA museum where we have over 900 works by various artists that represent Freudian ideas in their drawings. [89 words]
+"
+shortcut_keys_enabled = false
 
 [connection signal="close_requested" from="Usee/Purity/Conscious/Window" to="Usee/Purity/Conscious" method="_on_window_close_requested"]
 [connection signal="close_requested" from="Usee/Streets/Conscious/Window" to="Usee/Streets/Conscious" method="_on_window_close_requested"]
@@ -953,3 +1345,23 @@ range_layer_max = -1
 [connection signal="close_requested" from="Duran/Nightlife/Subconscious/Window" to="Duran/Nightlife/Subconscious" method="_on_window_close_requested"]
 [connection signal="close_requested" from="Duran/Pain/Subconscious/Window" to="Duran/Pain/Subconscious" method="_on_window_close_requested"]
 [connection signal="close_requested" from="Duran/Love/Subconscious/Window" to="Duran/Love/Subconscious" method="_on_window_close_requested"]
+[connection signal="mouse_entered" from="Camera2D/ScriptHolder/Button" to="Camera2D/ScriptHolder" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Camera2D/ScriptHolder/Button" to="Camera2D/ScriptHolder" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Camera2D/ScriptHolder/Button" to="Camera2D/ScriptHolder" method="_on_button_pressed"]
+[connection signal="close_requested" from="Camera2D/ScriptHolder/Window" to="Camera2D/ScriptHolder" method="_on_window_close_requested"]
+[connection signal="mouse_entered" from="ButtonGroup/Usee/Button" to="ButtonGroup/Usee" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="ButtonGroup/Usee/Button" to="ButtonGroup/Usee" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="ButtonGroup/Usee/Button" to="ButtonGroup/Usee" method="_on_button_pressed"]
+[connection signal="close_requested" from="ButtonGroup/Usee/Window" to="ButtonGroup/Usee" method="_on_window_close_requested"]
+[connection signal="mouse_entered" from="ButtonGroup/Duran/Button" to="ButtonGroup/Duran" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="ButtonGroup/Duran/Button" to="ButtonGroup/Duran" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="ButtonGroup/Duran/Button" to="ButtonGroup/Duran" method="_on_button_pressed"]
+[connection signal="close_requested" from="ButtonGroup/Duran/Window" to="ButtonGroup/Duran" method="_on_window_close_requested"]
+[connection signal="mouse_entered" from="ButtonGroup/AboutUs/Button" to="ButtonGroup/AboutUs" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="ButtonGroup/AboutUs/Button" to="ButtonGroup/AboutUs" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="ButtonGroup/AboutUs/Button" to="ButtonGroup/AboutUs" method="_on_button_pressed"]
+[connection signal="close_requested" from="ButtonGroup/AboutUs/Window" to="ButtonGroup/AboutUs" method="_on_window_close_requested"]
+[connection signal="mouse_entered" from="ButtonGroup/AboutGallery/Button" to="ButtonGroup/AboutGallery" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="ButtonGroup/AboutGallery/Button" to="ButtonGroup/AboutGallery" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="ButtonGroup/AboutGallery/Button" to="ButtonGroup/AboutGallery" method="_on_button_pressed"]
+[connection signal="close_requested" from="ButtonGroup/AboutGallery/Window" to="ButtonGroup/AboutGallery" method="_on_window_close_requested"]
