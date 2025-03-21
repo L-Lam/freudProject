@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://chy74fmbls1i1" path="res://assets/Love.png" id="15_k1aeq"]
 [ext_resource type="Script" path="res://scripts/camera.gd" id="17_1cox0"]
 [ext_resource type="Script" path="res://scripts/popup.gd" id="19_kyk2g"]
-[ext_resource type="Texture2D" uid="uid://l0k7jotqywhy" path="res://assets/demo.png" id="20_82cid"]
+[ext_resource type="Texture2D" uid="uid://cfkf064nma70x" path="res://assets/demo.png" id="20_82cid"]
 [ext_resource type="Texture2D" uid="uid://cm60ouglub7ja" path="res://assets/butterfly.png" id="20_ariq0"]
 [ext_resource type="Texture2D" uid="uid://cfbgbr88wka4c" path="res://assets/butterfly2.png" id="21_63up4"]
 [ext_resource type="Texture2D" uid="uid://balnpkw333qu2" path="res://assets/butterfly3.png" id="22_ncqui"]
@@ -133,7 +133,7 @@ The mother’s expression towards the baby is cold and detached, creating this s
 
 In the absence of warmth and affection during Useé’s infancy, his sense of self became shaped by rejection and emotional isolation. This became so intertwined with his being that muteness became his default social interaction, leading to his eventual isolation from his peers and development of his neurosis seen in Streets. This painting represents his beginning and his idea that his social anxiety was developed by his childhood development.
 
-Purity is Useé’s way of representing a key point in his childhood development and development as a person. It shows the importance of childhood development and the impact the child’s surroundings have on their future personality and behavior. Through this painting, Useé represents his confrontation with the formative struggles of emotional needs. [301 words]
+Purity is Useé’s way of representing a key point in his childhood development and development as a person. It shows the importance of childhood development and the impact the child’s surroundings have on their future personality and behavior. Through this painting, Useé represents his confrontation with the formative struggles of emotional needs.
 "
 shortcut_keys_enabled = false
 
@@ -215,7 +215,7 @@ The central figure’s isolation from the other figures represents his neurosis,
 
 Juxtaposed to the dark silhouettes of the people within the city, the city background is bright, representing the difference between the conscious and unconscious mind. The city, orderly and illuminated, represents the conscious, where it is governed by the ego and superego as society requires those parts of the mind to function. In contrast, the shadowy figures suggest that within our consciousness lies a deeper and profound realm of hidden thought and conflict.
 
-Useé’s usage of the central figure in opposition to the surrounding word creates an almost existential tension that questions if individuals should suppress their inner conflicts for societal function or should individuals embrace their subconscious at the risk of further mental anguish. The painting, in this way, reflects not only Useé’s personal psychological struggle but also a broader commentary on the Freudian experience in society as a whole. [357 words]"
+Useé’s usage of the central figure in opposition to the surrounding word creates an almost existential tension that questions if individuals should suppress their inner conflicts for societal function or should individuals embrace their subconscious at the risk of further mental anguish. The painting, in this way, reflects not only Useé’s personal psychological struggle but also a broader commentary on the Freudian experience in society as a whole."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Usee/Streets/Conscious/Window"]
@@ -300,7 +300,7 @@ A particularly striking element of this painting is the tall, conical white cap 
 
 The title, The Throne, presents a striking irony. A throne is typically associated with power, authority, and control, yet here Useé depicts his experience of humiliation and powerlessness. This contradiction demonstrates Useé’s attempt at dealing with his trauma. In this case, he compensates for his past helplessness through titling the piece with an ironic name.
 
-This piece demonstrates how our early experiences shape our behaviors and personalities. Here, Useé highlights one of his key experiences that shaped his self-perception by creating subconscious turmoil and more social anxiety. It is his way of confronting and dealing with his past. [379 words]"
+This piece demonstrates how our early experiences shape our behaviors and personalities. Here, Useé highlights one of his key experiences that shaped his self-perception by creating subconscious turmoil and more social anxiety. It is his way of confronting and dealing with his past."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Usee/TheThrone/Conscious/Window"]
@@ -383,7 +383,7 @@ Next, the heavy rain obscuring the black central figure in the painting demonstr
 
 Furthermore, the water of the river represents the subconscious and the central figure being knee-deep in the river represents how desperately Useé’s subconscious is trying to repress his trauma. It shows the struggle to suppress the trauma as the partial submersion indicates that the conscious is partially aware of these buried experiences and is affected by those experiences.
 
-The name, Styx, further reinforces this symbolism as, in Greek mythology, the River Styx is the boundary between the underworld and the living world. Thus, the river represents transition, and Useé being inside this river represents memories in the transition from subconscious to conscious. [326 words]"
+The name, Styx, further reinforces this symbolism as, in Greek mythology, the River Styx is the boundary between the underworld and the living world. Thus, the river represents transition, and Useé being inside this river represents memories in the transition from subconscious to conscious."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Usee/Styx/Conscious/Window"]
@@ -464,7 +464,7 @@ Additionally, the figure walking into the sunset represents catharsis. In his ot
 
 The sunset itself  represents consciousness, comfort, and transformation. Just as the sunset is the point where day shifts to night, Useé’s representation of the sunset represents his own transformation of past trauma to acceptance. The motion into the sunset from the black figure is his repressed subconscious memories being moved into the conscious to be dealt with and accepted. It is catharsis because of the element of integration of his past into his conscious self.
 
-Furthermore, Dawn utilizes a bright and saturated color scheme, contrasting from Useé’s previous work where he uses more muted colors to represent repression. This usage of change in motif represents Useé’s reconnection with reality, representing how he is over the past and can see the other aspects of the world rather than simply its banal or hurtful side. It is the renewal of self-awareness and emotional clarity that these vibrant colors signify. [332 Words]"
+Furthermore, Dawn utilizes a bright and saturated color scheme, contrasting from Useé’s previous work where he uses more muted colors to represent repression. This usage of change in motif represents Useé’s reconnection with reality, representing how he is over the past and can see the other aspects of the world rather than simply its banal or hurtful side. It is the renewal of self-awareness and emotional clarity that these vibrant colors signify."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Usee/Dawn/Conscious/Window"]
@@ -550,7 +550,7 @@ Looking at it from a different perspective, the flytrap could also represent the
 
 Durán restricts the flytrap's color to only green and red. Here, green represents the greed and ambition the trap has for consumption and growth through collecting more nutrients. Additionally, the red represents violence and a willingness to kill, implying the nature of the plant through threatening colors. This choice highlights the id nature of the flytrap with desire and violence.
 
-Being at the forefront of every institute he had ever attended, success seemed like a one-way path. Durán felt that there could be different approaches to a successful life. However, society pressures individuals to follow their formula of success, becoming exactly what they envision. This painting is likely alluding to this idea. Contrary to other flowers that create their own sugar and energy, the venus flytrap still finds success in devouring curious passersby, albeit it is more violent. Durán, becoming crafted into the model citizen society imagines, wants to call for change. By painting this piece, he ignites the flames that call for revolutionary change, leading to his switch from law school to art school. [420 words]"
+Being at the forefront of every institute he had ever attended, success seemed like a one-way path. Durán felt that there could be different approaches to a successful life. However, society pressures individuals to follow their formula of success, becoming exactly what they envision. This painting is likely alluding to this idea. Contrary to other flowers that create their own sugar and energy, the venus flytrap still finds success in devouring curious passersby, albeit it is more violent. Durán, becoming crafted into the model citizen society imagines, wants to call for change. By painting this piece, he ignites the flames that call for revolutionary change, leading to his switch from law school to art school."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Duran/Trap/Subconscious/Window"]
@@ -631,7 +631,7 @@ It is clear that Durán has a strong understanding of Freud at this point. The t
 
 There is a juxtaposition between the two cities as they each transition to the next along the crosswalk. This highlights the contrast between the two cities, but it also suggests that Durán found the lifestyles equally tempting to follow. It could also be argued that the juxtaposition shows how similar the two cities are. They are like two sides of the same coin, the same city that is superego can also be just as id. This is a metaphor for the human mind, and it also foreshadows Durán’s eventual demise. It suggests that the human mind is easily influenced by its environment. Durán himself was an exemplary artist that would eventually fall victim to a heavy ketamine addiction. 
 
-Two Cities is one of Durán’s most influential pieces in the contemporary and post-Freudian movements. It is able to express his uncertainty about which route he should take. It also shows the similarities between the two cities, a metaphor for how easily that human mind can be influenced by its surroundings. [469 words]"
+Two Cities is one of Durán’s most influential pieces in the contemporary and post-Freudian movements. It is able to express his uncertainty about which route he should take. It also shows the similarities between the two cities, a metaphor for how easily that human mind can be influenced by its surroundings."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Duran/TwoCities/Subconscious/Window"]
@@ -712,7 +712,7 @@ Durán intentionally differentiates between the two sides of the artwork, much l
 
 Durán created this painting to highlight the attractiveness of sin. Colors overwhelm, almost nauseate the viewer and pull their attention from the greyscale structures on the other side of the road. He also captures the sensation of euphoria with warped, bouncing structures. Overall, it creates a sensational art piece that leaves viewers unease and curious about the world of sin. In addition, this painting also has a Freudian meaning which he might not have intended. He has already fallen too far into the grips of the id. By consuming ketamine, his superego is warped, and without it to take control, he will only fall deeper into primal instincts and desires. 
 
-With the passing of his mother and brother, he has lost most of his drive in living. In Two Cities, he was taking more of a neutral stance between the superego and the id. However, this painting clearly glorifies one side more than the other. This painting will mark the downfall in Ignacio Durán’s art career. [457 words]"
+With the passing of his mother and brother, he has lost most of his drive in living. In Two Cities, he was taking more of a neutral stance between the superego and the id. However, this painting clearly glorifies one side more than the other. This painting will mark the downfall in Ignacio Durán’s art career."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Duran/Nightlife/Subconscious/Window"]
@@ -791,7 +791,7 @@ Durán’s painting seems very simple at a glance, yet it is effective in convey
 
 Aside from his real struggles, another meaning can be extracted from this self portrait. As mentioned before, the warm-colored backdrop and piercing red give the idea that Durán might be burning, like he is in hell. While his body is mostly red, there are still some parts of him that are different color shades. The red symbolizes the devil, or the id in Freudian terms, who is slowly consuming his body. Before long, he will become fully red, which would mean that he has completely lost his humanity. This can be a metaphor for his gradual deterioration towards the sins of life, which have also been hinted in Nightlife. Unlike in that painting however, Durán depicts the id as the devil rather than a colorful, inviting strip mall. Durán must have finally realized the dangers of temptation, but has already fallen too far to help himself. He has become the embodiment of the id, the one who only lives by the Pleasure Principle. 
 
-Pain might seem very simple at a glance, but it is filled to the brim with various meanings, all of which helps the viewer understand more about Durán’s torment and conflict. It helps to express the physical and mental pain he is undergoing, through its bright colors and distorted features. The same saturated red colors paired with the warm background also informs readers that Durán has fallen too far into the pleasures of life, becoming one equal to the devil, or the id. [378 words]"
+Pain might seem very simple at a glance, but it is filled to the brim with various meanings, all of which helps the viewer understand more about Durán’s torment and conflict. It helps to express the physical and mental pain he is undergoing, through its bright colors and distorted features. The same saturated red colors paired with the warm background also informs readers that Durán has fallen too far into the pleasures of life, becoming one equal to the devil, or the id."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Duran/Pain/Subconscious/Window"]
@@ -872,7 +872,7 @@ In addition, this painting might also reference the stages of development. A clo
 
 A reason Durán might have named this painting Love goes off of the idea introduced earlier than he had already accepted his fate. He might’ve been fascinated by death instead. Since the passing of his mother and brother, Durán had longed to see them again. Christianity, the dominant religion at the time, believed that lost souls after death travel to their afterlife in heaven. It wouldn’t be unnatural for Durán to long for death in order to meet them again. As a form of love, the Grim Reaper helps to put him out of his misery. In this context, this would be lethal injection, as opposed to ketamine.
 
-Durán’s Love has various interpretations. It could be understood as his inability to control his bodily dependence on ketamine. It can also be seen as a comparison between his current state to that of a child. Only this time, there is no one to lift him out of his regression. Unable to overcome addiction, he succumbs to the Grim Reaper. Lastly, Durán’s Love can also be interpreted literally as his love for death. He longs to meet his family again, and the Grim Reaper is here to put him down. These are only some of the many interpretations of Durán’s Love. He had left behind such an intricate piece, leaving it to the viewers to understand his life story. [507 words]"
+Durán’s Love has various interpretations. It could be understood as his inability to control his bodily dependence on ketamine. It can also be seen as a comparison between his current state to that of a child. Only this time, there is no one to lift him out of his regression. Unable to overcome addiction, he succumbs to the Grim Reaper. Lastly, Durán’s Love can also be interpreted literally as his love for death. He longs to meet his family again, and the Grim Reaper is here to put him down. These are only some of the many interpretations of Durán’s Love. He had left behind such an intricate piece, leaving it to the viewers to understand his life story."
 shortcut_keys_enabled = false
 
 [node name="TitleText" type="RichTextLabel" parent="Duran/Love/Subconscious/Window"]
@@ -923,15 +923,6 @@ texture = SubResource("GradientTexture2D_ucecw")
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(960, 540)
 script = ExtResource("17_1cox0")
-
-[node name="Escape" type="RichTextLabel" parent="Camera2D"]
-offset_right = 1000.0
-offset_bottom = 40.0
-theme_override_fonts/normal_font = ExtResource("4_r6ve1")
-theme_override_font_sizes/normal_font_size = 20
-bbcode_enabled = true
-text = " Press \"Esc\" to quit."
-fit_content = true
 
 [node name="ScriptHolder" type="Node2D" parent="Camera2D"]
 script = ExtResource("19_kyk2g")
@@ -1161,7 +1152,7 @@ Useé began painting for the Art Club during his high school years. There, he wo
 
 However, Useé halted his art career to continue pursuing education in Barcelona about psychology in order to break from his artist fatigue. There, he furthered his already existing knowledge of Freudian theory. Useé used these Freudian concepts in his artworks, which are his greatest works we know of today. The Throne and Dawn are not only his best works, but are debatably some of the best works of art of the time period. 
 
-Following the movement however, Useé seems to have faded from the limelight. He began to produce experimental, contemporary works much to no avail. He would pass away a lonely and penniless man on the sixth of May in 1964 to pneumonia. Today, we celebrate his idea and passion in Freudian art here in the Museum of Freudian Art (MoFA), where we wish to spread the ideas of Freudian expression. As our name suggests, we are here to honor one of the greatest Freudian painters of all time. [435 words]"
+Following the movement however, Useé seems to have faded from the limelight. He began to produce experimental, contemporary works much to no avail. He would pass away a lonely and penniless man on the sixth of May in 1964 to pneumonia. Today, we celebrate his idea and passion in Freudian art here in the Museum of Freudian Art (MoFA), where we wish to spread the ideas of Freudian expression. As our name suggests, we are here to honor one of the greatest Freudian painters of all time."
 shortcut_keys_enabled = false
 
 [node name="Duran" type="Node2D" parent="ButtonGroup"]
@@ -1229,7 +1220,7 @@ However, Durán was not satisfied with his life despite having access to the hig
 
 Shortly after his rising success in the art industry, his mother would pass away from coronary artery disease. The following year, his brother passed away too in a car accident. These flipped Durán’s life around, and it showed in his paintings. Durán fell into clinical depression and isolated himself from attention. He also began taking ketamine to cope with his depression. As a catharsis, Durán resorted to painting to express his pain and hardships. Not much is known about the final years of his life, but he would tragically pass away at the age of twenty-nine to a drug overdose on September 23, 1979. 
 
-The layers of depth his paintings newly found in his most difficult times would get him the recognition he deserves. Today, we are here to tell you about the story of the curious man, who strayed from success and succumbed to drug addiction. We, the Museum of Freudian Art, seek to spread Durán’s story in his artwork to all. [399 words]"
+The layers of depth his paintings newly found in his most difficult times would get him the recognition he deserves. Today, we are here to tell you about the story of the curious man, who strayed from success and succumbed to drug addiction. We, the Museum of Freudian Art, seek to spread Durán’s story in his artwork to all."
 shortcut_keys_enabled = false
 
 [node name="Credits" type="Node2D" parent="ButtonGroup"]
@@ -1346,7 +1337,7 @@ Established in 1989, we have worked diligently to collect and present Freudian a
 
 We are dedicated to collecting, presenting, and interpreting  art that exudes Freudian ideas, in all visual mediums. When we are presented with a piece of art, we always ask where the Freud influence in the art is. While the artist may not know the influence exists, we certainly do. Our job and hope is to enlighten everyone about the Freud within themselves and paint a clear picture of the Freud in culture.
 
-With our venue in Los Angeles, MOFA Grand Avenue, we engage audiences with Freud and foster introspection. [241 words]"
+With our venue in Los Angeles, MOFA Grand Avenue, we engage audiences with Freud and foster introspection."
 shortcut_keys_enabled = false
 
 [node name="AboutGallery" type="Node2D" parent="ButtonGroup"]
@@ -1402,8 +1393,7 @@ PURPOSE:
 
 This art gallery experience will immerse you, the player, in an art gallery that highlights the Freud in 10 drawings by two artists whose works are about their lives and the Freudian ideas that are ingrained in them.
 
-If you find this artwork interesting, come see our full collection at the MoFA museum where we have over 900 works by various artists that represent Freudian ideas in their drawings. [89 words]
-"
+If you find this artwork interesting, come see our full collection at the MoFA museum where we have over 900 works by various artists that represent Freudian ideas in their drawings."
 shortcut_keys_enabled = false
 
 [connection signal="close_requested" from="Usee/Purity/Conscious/Window" to="Usee/Purity/Conscious" method="_on_window_close_requested"]

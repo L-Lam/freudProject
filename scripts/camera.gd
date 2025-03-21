@@ -12,10 +12,7 @@ func _process(delta: float) -> void:
 	
 	if player.position.x < 0:
 		position.x = player.position.x - 1620
-		$Escape.self_modulate = Color(1, 1, 1, 1)
 	elif 0 <= player.position.x and player.position.x < 1920:
 		position.x = 0
-		$Escape.self_modulate = Color(0, 0, 0, 1)
 	else:
 		position.x = player.position.x - 300
-		$Escape.self_modulate = Color(0, 0, 0, 1)
