@@ -7,7 +7,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_key_pressed(KEY_ESCAPE):
+	if Input.is_key_pressed(KEY_DELETE):
 		get_tree().quit()
 		
 	if $Player.position.x < 0 and $DirectionalLight2D.energy > 1:
